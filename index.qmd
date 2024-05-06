@@ -1,0 +1,247 @@
+---
+title: "WebR: Why, What, How"
+author: Ted Laderas
+engine: knitr
+filters: 
+  - webr
+format: revealjs
+webr:
+  packages: ['ggplot2', 'dplyr', 'palmerpenguins']
+---
+
+## This Presentation
+
+- What?
+- Why?
+- How?
+
+```{webr-r}
+#| context: setup
+library(dplyr)
+library(ggplot2)
+library(penguins)
+```
+
+## What is WebR?
+
+```{webr-r}
+ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +
+  geom_boxplot()
+```
+
+
+## Why WebR?
+
+- Education
+- Internal Websites 
+- 
+
+## How does WebR work?
+
+- Browsers include WebAssembly and JavaScript
+- Webpages use Javascript to execute WebR scripts
+- Results are returned within a `<div>`
+  - Special R canvas called HTML
+
+## An Endless Loop (kind of)
+
+```{mermaid}
+
+
+```
+
+## WebR documentation
+
+- Very technical
+- Specifies how to get JS to interact with WebR in a web page
+- Asynchronous evaluation
+
+## Recommended: Quarto/WebR documentation
+
+- [Quarto WebR documentation](https://quarto-webr.thecoatlessprofessor.com/)
+
+
+
+## You don't have to worry about this!
+
+- Quarto/WebR extension
+- Handles the communication between JS and WebR
+- Don't worry!
+
+# First, Create a Project
+File >> New Project >> New Folder >> Quarto Website
+
+```bash
+├── _quarto.yml
+├── _site
+├── about.qmd
+├── index.qmd
+├── styles.css
+└── webr-demo.Rproj
+```
+
+
+## Next, install Quarto Extension in Project
+
+- In the RStudio Terminal Window:
+
+```bash
+quarto install coatless/quarto-webr
+```
+
+This folder will be installed in your project:
+
+```bash
+├── _extensions
+│   └── coatless
+│       └── webr  ## Contains a lot of JavaScript
+```
+
+# Quarto/WebR Setup
+
+## Quarto/WebR Setup {auto-animate="true"}
+```{markdown}
+#| echo: true
+title: "My WebR Demo"
+format: revealjs
+engine: knitr
+```
+Start like usual, specify `engine: knitr`
+
+## Quarto/WebR Setup {auto-animate="true"}
+```{markdown}
+#| echo: true
+#| code-line-numbers: "4-5"
+title: "My WebR Demo"
+format: revealjs
+engine: knitr
+filters:                     
+  - webr                     
+```
+Need to use `filters` with `- webr` option
+
+
+## Quarto/WebR Setup {auto-animate="true"}
+```{markdown}
+#| echo: true
+#| code-line-numbers: "6-7"
+title: "My WebR Demo"
+format: revealjs
+engine: knitr
+filters:                         
+  - webr                         
+webr:                            
+  packages: ['ggplot2', 'dplyr', 'palmerpenguins']
+```
+`webr` is where you set options, including which packages to install
+
+## A Note about Packages
+
+- Packages need to be compiled for WebAssembly
+- Need to solve dependencies
+- [WebR Compiled Packages](https://repo.r-wasm.org/)
+  - Default repository for packages
+- [Using R Packages in WebR](https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html)
+
+# Add Your Code Blocks
+
+## Quarto/WebR Block {auto-animate="true"}
+
+```{{webr-r}}
+library(palmerpenguins)
+table(penguins$island)
+```
+
+## Quarto/WebR Block {auto-animate="true"}
+
+```{{webr-r}}
+library(palmerpenguins)
+table(penguins$island)
+```
+
+This becomes: 
+
+```{webr-r}
+library(palmerpenguins)
+table(penguins$island)
+```
+
+## `context: setup`
+
+[`context: setup`](https://quarto-webr.thecoatlessprofessor.com/qwebr-internal-cell.html#hidden-loading-of-a-dataset) - Pre-load data, load packages, for use globally
+
+```{{webr-r}}
+#| context: setup
+
+library(dplyr)
+library(ggplot2)
+library(penguins)
+```
+
+## `context: output`
+
+Show only output, not execution cell
+
+```{{webr-r}}
+#| context: output
+
+table(penguins$species)
+```
+
+## `context: output`
+
+```{webr-r}
+#| context: output
+
+table(penguins$species)
+```
+
+## What about files?
+
+- There is a filesystem that is created
+- Not super easy to get stuff in
+
+
+## Deployment
+
+- You will need a web server to deploy your WebR page
+- Do not need a Shiny server, just something that serves HTML 
+- It's all done in the browser
+
+
+## Deployment
+
+- Can use github pages:
+
+  ```bash
+  quarto publish gh-pages ./
+  ```
+  
+## Deployment
+
+Or netlify:
+
+  ```bash
+  quarto publish netlify ./
+  ```
+
+## Deployment
+
+Or Github Actions:
+
+
+
+
+## What about Shiny?
+
+
+
+## Security
+
+
+## Resources
+
+- [Quarto/WebR extension]()
+- [How to Run R in the Browser with WebR (Danielle Navarro)](https://blog.djnavarro.net/posts/2023-04-09_webr/)
+- [Quarto/WebR Experments (Bob Rudis)](https://github.com/hrbrmstr/webr-experiments)
+- [WebR Filesystem (Bob Rudis)](https://rud.is/w/fs/)
