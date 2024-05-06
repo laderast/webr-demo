@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "index.html#this-presentation",
+    "href": "index.html#this-presentation",
+    "title": "WebR: Why, What, How",
+    "section": "This Presentation",
+    "text": "This Presentation\n\nWhat?\nWhy?\nHow?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#what-is-webr",
+    "href": "index.html#what-is-webr",
+    "title": "WebR: Why, What, How",
+    "section": "What is WebR?",
+    "text": "What is WebR?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#why-webr",
+    "href": "index.html#why-webr",
+    "title": "WebR: Why, What, How",
+    "section": "Why WebR?",
+    "text": "Why WebR?\n\nEducation\nInternal Websites"
+  },
+  {
+    "objectID": "index.html#how-does-webr-work",
+    "href": "index.html#how-does-webr-work",
+    "title": "WebR: Why, What, How",
+    "section": "How does WebR work?",
+    "text": "How does WebR work?\n\nBrowsers include WebAssembly and JavaScript\nWebpages use Javascript to execute WebR scripts\nResults are returned within a &lt;div&gt;\n\nSpecial R canvas called HTML"
+  },
+  {
+    "objectID": "index.html#an-endless-loop-kind-of",
+    "href": "index.html#an-endless-loop-kind-of",
+    "title": "WebR: Why, What, How",
+    "section": "An Endless Loop (kind of)",
+    "text": "An Endless Loop (kind of)"
+  },
+  {
+    "objectID": "index.html#webr-documentation",
+    "href": "index.html#webr-documentation",
+    "title": "WebR: Why, What, How",
+    "section": "WebR documentation",
+    "text": "WebR documentation\n\nVery technical\nSpecifies how to get JS to interact with WebR in a web page\nAsynchronous evaluation"
+  },
+  {
+    "objectID": "index.html#recommended-quartowebr-documentation",
+    "href": "index.html#recommended-quartowebr-documentation",
+    "title": "WebR: Why, What, How",
+    "section": "Recommended: Quarto/WebR documentation",
+    "text": "Recommended: Quarto/WebR documentation\n\nQuarto WebR documentation"
+  },
+  {
+    "objectID": "index.html#you-dont-have-to-worry-about-this",
+    "href": "index.html#you-dont-have-to-worry-about-this",
+    "title": "WebR: Why, What, How",
+    "section": "You don’t have to worry about this!",
+    "text": "You don’t have to worry about this!\n\nQuarto/WebR extension\nHandles the communication between JS and WebR\nDon’t worry!"
+  },
+  {
+    "objectID": "index.html#next-install-quarto-extension-in-project",
+    "href": "index.html#next-install-quarto-extension-in-project",
+    "title": "WebR: Why, What, How",
+    "section": "Next, install Quarto Extension in Project",
+    "text": "Next, install Quarto Extension in Project\n\nIn the RStudio Terminal Window:\n\nquarto install coatless/quarto-webr\nThis folder will be installed in your project:\n├── _extensions\n│   └── coatless\n│       └── webr  ## Contains a lot of JavaScript"
+  },
+  {
+    "objectID": "index.html#quartowebr-setup-1",
+    "href": "index.html#quartowebr-setup-1",
+    "title": "WebR: Why, What, How",
+    "section": "Quarto/WebR Setup",
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: revealjs\nengine: knitr\n\nStart like usual, specify engine: knitr"
+  },
+  {
+    "objectID": "index.html#quartowebr-setup-2",
+    "href": "index.html#quartowebr-setup-2",
+    "title": "WebR: Why, What, How",
+    "section": "Quarto/WebR Setup",
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: revealjs\nengine: knitr\nfilters:                     \n  - webr                     \n\nNeed to use filters with - webr option"
+  },
+  {
+    "objectID": "index.html#quartowebr-setup-3",
+    "href": "index.html#quartowebr-setup-3",
+    "title": "WebR: Why, What, How",
+    "section": "Quarto/WebR Setup",
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: revealjs\nengine: knitr\nfilters:                         \n  - webr                         \nwebr:                            \n  packages: ['ggplot2', 'dplyr', 'palmerpenguins']\n\nwebr is where you set options, including which packages to install"
+  },
+  {
+    "objectID": "index.html#a-note-about-packages",
+    "href": "index.html#a-note-about-packages",
+    "title": "WebR: Why, What, How",
+    "section": "A Note about Packages",
+    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\nNeed to solve dependencies\nWebR Compiled Packages\n\nDefault repository for packages\n\nUsing R Packages in WebR"
+  },
+  {
+    "objectID": "index.html#quartowebr-block",
+    "href": "index.html#quartowebr-block",
+    "title": "WebR: Why, What, How",
+    "section": "Quarto/WebR Block",
+    "text": "Quarto/WebR Block\n```{webr-r}\nlibrary(palmerpenguins)\ntable(penguins$island)\n```"
+  },
+  {
+    "objectID": "index.html#quartowebr-block-1",
+    "href": "index.html#quartowebr-block-1",
+    "title": "WebR: Why, What, How",
+    "section": "Quarto/WebR Block",
+    "text": "Quarto/WebR Block\n```{webr-r}\nlibrary(palmerpenguins)\ntable(penguins$island)\n```\nThis becomes:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#context-setup",
+    "href": "index.html#context-setup",
+    "title": "WebR: Why, What, How",
+    "section": "context: setup",
+    "text": "context: setup\ncontext: setup - Pre-load data, load packages, for use globally\n```{webr-r}\n#| context: setup\n\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(penguins)\n```"
+  },
+  {
+    "objectID": "index.html#context-output",
+    "href": "index.html#context-output",
+    "title": "WebR: Why, What, How",
+    "section": "context: output",
+    "text": "context: output\nShow only output, not execution cell\n```{webr-r}\n#| context: output\n\ntable(penguins$species)\n```"
+  },
+  {
+    "objectID": "index.html#context-output-1",
+    "href": "index.html#context-output-1",
+    "title": "WebR: Why, What, How",
+    "section": "context: output",
+    "text": "context: output\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#what-about-files",
+    "href": "index.html#what-about-files",
+    "title": "WebR: Why, What, How",
+    "section": "What about files?",
+    "text": "What about files?\n\nThere is a filesystem that is created\nNot super easy to get stuff in"
+  },
+  {
+    "objectID": "index.html#deployment",
+    "href": "index.html#deployment",
+    "title": "WebR: Why, What, How",
+    "section": "Deployment",
+    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nDo not need a Shiny server, just something that serves HTML\nIt’s all done in the browser"
+  },
+  {
+    "objectID": "index.html#deployment-1",
+    "href": "index.html#deployment-1",
+    "title": "WebR: Why, What, How",
+    "section": "Deployment",
+    "text": "Deployment\n\nCan use github pages:\nquarto publish gh-pages ./"
+  },
+  {
+    "objectID": "index.html#deployment-2",
+    "href": "index.html#deployment-2",
+    "title": "WebR: Why, What, How",
+    "section": "Deployment",
+    "text": "Deployment\nOr netlify:\nquarto publish netlify ./"
+  },
+  {
+    "objectID": "index.html#deployment-3",
+    "href": "index.html#deployment-3",
+    "title": "WebR: Why, What, How",
+    "section": "Deployment",
+    "text": "Deployment\nOr Github Actions:"
+  },
+  {
+    "objectID": "index.html#what-about-shiny",
+    "href": "index.html#what-about-shiny",
+    "title": "WebR: Why, What, How",
+    "section": "What about Shiny?",
+    "text": "What about Shiny?"
+  },
+  {
+    "objectID": "index.html#security",
+    "href": "index.html#security",
+    "title": "WebR: Why, What, How",
+    "section": "Security",
+    "text": "Security"
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "WebR: Why, What, How",
+    "section": "Resources",
+    "text": "Resources\n\nQuarto/WebR extension\nHow to Run R in the Browser with WebR (Danielle Navarro)\nQuarto/WebR Experments (Bob Rudis)\nWebR Filesystem (Bob Rudis)"
+  }
+]
