@@ -206,7 +206,7 @@ table(penguins$species)
 
 - You will need a web server to deploy your WebR page
 - Do not need a Shiny server, just something that serves HTML 
-- It's all done in the browser
+- Remember, all computations are done in the browser
 
 
 ## Deployment
@@ -234,14 +234,15 @@ Or Github Actions:
 
 ## What about Shiny?
 
-
+[Shinylive]()
 
 ## Security
 
 
 ## Resources
 
-- [Quarto/WebR extension]()
+- [Quarto/WebR extension](https://quarto-webr.thecoatlessprofessor.com/)
 - [How to Run R in the Browser with WebR (Danielle Navarro)](https://blog.djnavarro.net/posts/2023-04-09_webr/)
+- [WebR Developer Resources](https://quarto-webr.thecoatlessprofessor.com/qwebr-developer-resources.html)
 - [Quarto/WebR Experments (Bob Rudis)](https://github.com/hrbrmstr/webr-experiments)
 - [WebR Filesystem (Bob Rudis)](https://rud.is/w/fs/)

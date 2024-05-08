@@ -137,7 +137,7 @@
     "href": "index.html#deployment",
     "title": "WebR: Why, What, How",
     "section": "Deployment",
-    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nDo not need a Shiny server, just something that serves HTML\nIt’s all done in the browser"
+    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nDo not need a Shiny server, just something that serves HTML\nRemember, all computations are done in the browser"
   },
   {
     "objectID": "index.html#deployment-1",
@@ -165,7 +165,7 @@
     "href": "index.html#what-about-shiny",
     "title": "WebR: Why, What, How",
     "section": "What about Shiny?",
-    "text": "What about Shiny?"
+    "text": "What about Shiny?\nShinylive"
   },
   {
     "objectID": "index.html#security",
@@ -179,6 +179,6 @@
     "href": "index.html#resources",
     "title": "WebR: Why, What, How",
     "section": "Resources",
-    "text": "Resources\n\nQuarto/WebR extension\nHow to Run R in the Browser with WebR (Danielle Navarro)\nQuarto/WebR Experments (Bob Rudis)\nWebR Filesystem (Bob Rudis)"
+    "text": "Resources\n\nQuarto/WebR extension\nHow to Run R in the Browser with WebR (Danielle Navarro)\nWebR Developer Resources\nQuarto/WebR Experments (Bob Rudis)\nWebR Filesystem (Bob Rudis)"
   }
 ]

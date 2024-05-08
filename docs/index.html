@@ -593,7 +593,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"id":1,"options":{"output":"true","dpi":72,"editor-quick-suggestions":"false","editor-font-scale":1,"out-width":"700px","context":"setup","comment":"","results":"markup","autorun":"true","out-height":"","editor-max-height":"","read-only":"false","classes":"","warning":"true","label":"unnamed-chunk-1","message":"true","fig-cap":"","fig-width":7,"fig-height":5},"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(penguins)"},{"id":2,"options":{"output":"true","dpi":72,"editor-quick-suggestions":"false","editor-font-scale":1,"out-width":"700px","context":"interactive","comment":"","results":"markup","autorun":"false","out-height":"","editor-max-height":"","read-only":"false","classes":"","warning":"true","label":"unnamed-chunk-2","message":"true","fig-cap":"","fig-width":7,"fig-height":5},"code":"ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +\n  geom_boxplot()"},{"id":3,"options":{"output":"true","dpi":72,"editor-quick-suggestions":"false","editor-font-scale":1,"out-width":"700px","context":"interactive","comment":"","results":"markup","autorun":"false","out-height":"","editor-max-height":"","read-only":"false","classes":"","warning":"true","label":"unnamed-chunk-3","message":"true","fig-cap":"","fig-width":7,"fig-height":5},"code":"library(palmerpenguins)\ntable(penguins$island)"},{"id":4,"options":{"output":"true","dpi":72,"editor-quick-suggestions":"false","editor-font-scale":1,"out-width":"700px","context":"output","comment":"","results":"markup","autorun":"true","out-height":"","editor-max-height":"","read-only":"false","classes":"","warning":"true","label":"unnamed-chunk-4","message":"true","fig-cap":"","fig-width":7,"fig-height":5},"code":"\ntable(penguins$species)"}];
+  globalThis.qwebrCellDetails = [{"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(penguins)","id":1,"options":{"results":"markup","fig-cap":"","context":"setup","fig-height":5,"comment":"","label":"unnamed-chunk-1","editor-quick-suggestions":"false","output":"true","out-height":"","dpi":72,"read-only":"false","out-width":"700px","message":"true","editor-max-height":"","warning":"true","autorun":"true","fig-width":7,"classes":"","editor-font-scale":1}},{"code":"ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +\n  geom_boxplot()","id":2,"options":{"results":"markup","fig-cap":"","context":"interactive","fig-height":5,"comment":"","label":"unnamed-chunk-2","editor-quick-suggestions":"false","output":"true","out-height":"","dpi":72,"read-only":"false","out-width":"700px","message":"true","editor-max-height":"","warning":"true","autorun":"false","fig-width":7,"classes":"","editor-font-scale":1}},{"code":"library(palmerpenguins)\ntable(penguins$island)","id":3,"options":{"results":"markup","fig-cap":"","context":"interactive","fig-height":5,"comment":"","label":"unnamed-chunk-3","editor-quick-suggestions":"false","output":"true","out-height":"","dpi":72,"read-only":"false","out-width":"700px","message":"true","editor-max-height":"","warning":"true","autorun":"false","fig-width":7,"classes":"","editor-font-scale":1}},{"code":"\ntable(penguins$species)","id":4,"options":{"results":"markup","fig-cap":"","context":"output","fig-height":5,"comment":"","label":"unnamed-chunk-4","editor-quick-suggestions":"false","output":"true","out-height":"","dpi":72,"read-only":"false","out-width":"700px","message":"true","editor-max-height":"","warning":"true","autorun":"true","fig-width":7,"classes":"","editor-font-scale":1}}];
 
   </script>
   <script type="module">
@@ -1874,7 +1874,7 @@ Ted Laderas
 <ul>
 <li>You will need a web server to deploy your WebR page</li>
 <li>Do not need a Shiny server, just something that serves HTML</li>
-<li>It’s all done in the browser</li>
+<li>Remember, all computations are done in the browser</li>
 </ul>
 </section>
 <section id="deployment-1" class="slide level2">
@@ -1895,6 +1895,7 @@ Ted Laderas
 </section>
 <section id="what-about-shiny" class="slide level2">
 <h2>What about Shiny?</h2>
+<p><a href="">Shinylive</a></p>
 </section>
 <section id="security" class="slide level2">
 <h2>Security</h2>
@@ -1902,8 +1903,9 @@ Ted Laderas
 <section id="resources" class="slide level2">
 <h2>Resources</h2>
 <ul>
-<li><a href="">Quarto/WebR extension</a></li>
+<li><a href="https://quarto-webr.thecoatlessprofessor.com/">Quarto/WebR extension</a></li>
 <li><a href="https://blog.djnavarro.net/posts/2023-04-09_webr/">How to Run R in the Browser with WebR (Danielle Navarro)</a></li>
+<li><a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-developer-resources.html">WebR Developer Resources</a></li>
 <li><a href="https://github.com/hrbrmstr/webr-experiments">Quarto/WebR Experments (Bob Rudis)</a></li>
 <li><a href="https://rud.is/w/fs/">WebR Filesystem (Bob Rudis)</a></li>
 </ul>
