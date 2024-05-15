@@ -55,8 +55,6 @@ ggplot(diamonds, aes(x=cut, y=carat,
 
 ## This is a huge accomplishment
 
-- Getting FORTRAN packages to compile
-
 ![](111-002.png)
 [Source: Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/#/now)
 
@@ -157,7 +155,7 @@ webr:
 
 - Packages need to be compiled for WebAssembly
   - [`{rwasm}` package](https://github.com/r-wasm/rwasm)
-- Need to solve dependencies
+  - Need to solve dependencies
 - [WebR Compiled Packages](https://repo.r-wasm.org/)
   - Default repository for packages (16000+ compiled, but not everything)
 - [Using R Packages in WebR](https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html)
@@ -227,7 +225,6 @@ Add another layer to the below plot by appending a `geom_point(aes(color=species
 ggplot(penguins) +
   aes(x=bill_length_mm, y=bill_depth_mm) +
   geom_hex() + ---------
-
 ```
 
 ## What about files?
