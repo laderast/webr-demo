@@ -10,7 +10,7 @@ format:
     resources:
       - data/*
 webr:
-  packages: ['ggplot2', 'dplyr', 'palmerpenguins']
+  packages: ['ggplot2', 'dplyr', 'palmerpenguins', 'hexbin']
   
 ---
 
@@ -44,7 +44,7 @@ ggplot(diamonds, aes(x=cut, y=carat,
 
 - Education
 - Internal Websites 
-- Give other people a chance with data
+- Shinylive (Shiny without Shiny Server)
 
 ## How does WebR work?
 
@@ -53,13 +53,22 @@ ggplot(diamonds, aes(x=cut, y=carat,
 - Results are returned within a `<div>`
   - Special R canvas called HTML
 
+## This is a huge accomplishment
+
+- Getting FORTRAN packages to compile
+
+![](111-002.png)
+[Source: Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/#/now)
+
 ## WebR Worker
 
 - WebR launches a **worker process** in browser
 - Uses JavaScript to communicate between web page and worker
 - Everything is run in the browser
 
-## WebR documentation
+## Where to read about WebR?
+
+### WebR documentation
 
 - Very technical
 - Specifies how to get JS to interact with WebR in a web page
@@ -68,6 +77,7 @@ ggplot(diamonds, aes(x=cut, y=carat,
 
 ## Recommended for Users: Quarto/WebR documentation
 
+- By James Balamuta and company
 - [Quarto WebR documentation](https://quarto-webr.thecoatlessprofessor.com/)
 - Quarto/WebR extension
 - Handles the communication between JS and WebR
@@ -110,7 +120,7 @@ This folder will be installed in your project:
 ```{markdown}
 #| echo: true
 title: "My WebR Demo"
-format: revealjs
+format: html
 engine: knitr
 ```
 - Start like usual 
@@ -121,7 +131,7 @@ engine: knitr
 #| echo: true
 #| code-line-numbers: "4-5"
 title: "My WebR Demo"
-format: revealjs
+format: html
 engine: knitr
 filters:                     
   - webr                     
@@ -134,7 +144,7 @@ Need to use `filters` with `- webr` option
 #| echo: true
 #| code-line-numbers: "6-7"
 title: "My WebR Demo"
-format: revealjs
+format: html
 engine: knitr
 filters:                         
   - webr                         
@@ -146,7 +156,7 @@ webr:
 ## A Note about Packages
 
 - Packages need to be compiled for WebAssembly
-  - `{wasm}` package
+  - [`{rwasm}` package](https://github.com/r-wasm/rwasm)
 - Need to solve dependencies
 - [WebR Compiled Packages](https://repo.r-wasm.org/)
   - Default repository for packages (16000+ compiled, but not everything)
@@ -206,6 +216,20 @@ table(penguins$species)
 table(penguins$species)
 ```
 
+# Education Example
+
+## Adding Layers
+
+Add another layer to the below plot by appending a `geom_point(aes(color=species))` to it. 
+
+```{webr-r}
+#| warning: false
+ggplot(penguins) +
+  aes(x=bill_length_mm, y=bill_depth_mm) +
+  geom_hex()
+
+```
+
 ## What about files?
 
 - There is a filesystem that is created
@@ -220,6 +244,7 @@ table(penguins$species)
 - Serve data at a URL
   - URL needs to be `https://`
   - `download.file()`
+- 
 
 ## Getting data in from a URL
 
@@ -245,7 +270,8 @@ penguins2 |>
 
 - You will need a web server to deploy your WebR page
 - Do not need a Shiny server, just something that serves HTML 
-- Remember, all computations are done in the browser
+- Browser needs internet access to download packages
+- All computations are done in the browser
 
 
 ## Deployment
@@ -261,6 +287,7 @@ penguins2 |>
   quarto publish netlify ./
   ```
 
+# Netlify Drop Demo
 
 
 ## What about Shiny?
