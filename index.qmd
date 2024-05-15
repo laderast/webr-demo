@@ -4,12 +4,19 @@ author: Ted Laderas
 engine: knitr
 filters: 
   - webr
-format: revealjs
+format: 
+  revealjs:
+    footer: https://laderast.github.io/webr-demo
+    resources:
+      - data/*
 webr:
   packages: ['ggplot2', 'dplyr', 'palmerpenguins']
+  
 ---
 
-
+```{js}
+webR.evalRVoid("download.file('https://laderast.github.io/webr-demo/data/penguins.csv', 'penguins.csv')");
+```
 
 ## This Presentation
 
@@ -21,7 +28,7 @@ webr:
 #| context: setup
 library(dplyr)
 library(ggplot2)
-library(penguins)
+library(palmerpenguins)
 #webr::mount(mountpoint = "/data",
 #  source = "./data",
 #  type = "NODEFS")
@@ -40,7 +47,7 @@ ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +
 
 - Education
 - Internal Websites 
-- 
+- Give other people a chance with data
 
 ## How does WebR work?
 
@@ -49,32 +56,29 @@ ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +
 - Results are returned within a `<div>`
   - Special R canvas called HTML
 
-## An Endless Loop (kind of)
+## WebR Worker
 
-```{mermaid}
-
-
-```
+- WebR launches a **worker process** in browser
+- Uses JavaScript to communicate between web page and worker
+- Everything is run in the browser
 
 ## WebR documentation
 
 - Very technical
 - Specifies how to get JS to interact with WebR in a web page
 - Asynchronous evaluation
+- **Made for developers**
 
-## Recommended: Quarto/WebR documentation
+## Recommended for Users: Quarto/WebR documentation
 
 - [Quarto WebR documentation](https://quarto-webr.thecoatlessprofessor.com/)
-
-
-
-## You don't have to worry about this!
-
 - Quarto/WebR extension
 - Handles the communication between JS and WebR
 - Don't worry!
 
-# First, Create a Project
+# Getting started with Quarto/WebR
+
+## First, Create a Project
 File >> New Project >> New Folder >> Quarto Website
 
 ```bash
@@ -112,7 +116,8 @@ title: "My WebR Demo"
 format: revealjs
 engine: knitr
 ```
-Start like usual, specify `engine: knitr`
+- Start like usual 
+- specify `engine: knitr`
 
 ## Quarto/WebR Setup {auto-animate="true"}
 ```{markdown}
@@ -144,10 +149,12 @@ webr:
 ## A Note about Packages
 
 - Packages need to be compiled for WebAssembly
+  - `{wasm}` package
 - Need to solve dependencies
 - [WebR Compiled Packages](https://repo.r-wasm.org/)
   - Default repository for packages (16000+ compiled, but not everything)
 - [Using R Packages in WebR](https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html)
+  - Can install in realtime or using the `webr:packages` option
 
 # Add Your Code Blocks
 
@@ -205,20 +212,31 @@ table(penguins$species)
 ## What about files?
 
 - There is a filesystem that is created
+  - emscripten webassembly filesystem
 - Not super easy to get stuff in
 - Distinct from your project
+  - can't see anything in your directory
 
-## Options
+## Options to get data in
 
-- Packages
+- Data packages
 - Serve data at a URL
   - URL needs to be `https://`
   - `download.file()`
 
-## 
+## Getting data in from a URL
 
-- Serve data from website folder
-  
+```{webr-r}
+download.file('https://laderast.github.io/webr-demo/data/penguins.csv', 'penguins.csv')
+list.files()
+```
+
+## Loading data in the filesystem
+
+```{webr-r}
+penguins2 <- read.csv("penguins.csv")
+summary(penguins2)
+```
 
 
 ## Deployment
@@ -244,11 +262,6 @@ Or netlify:
   quarto publish netlify ./
   ```
 
-## Deployment
-
-Or Github Actions:
-
-  
 
 
 ## What about Shiny?

@@ -385,9 +385,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/editor/editor.main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
@@ -593,7 +590,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(penguins)\n#webr::mount(mountpoint = \"/data\",\n#  source = \"./data\",\n#  type = \"NODEFS\")\n#penguins = read.csv(\"/data/penguins.csv\")","options":{"out-height":"","warning":"true","dpi":72,"editor-font-scale":1,"output":"true","results":"markup","read-only":"false","label":"unnamed-chunk-1","editor-max-height":"","editor-quick-suggestions":"false","context":"setup","fig-cap":"","comment":"","autorun":"true","classes":"","fig-width":7,"out-width":"700px","message":"true","fig-height":5},"id":1},{"code":"ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +\n  geom_boxplot()","options":{"out-height":"","warning":"true","dpi":72,"editor-font-scale":1,"output":"true","results":"markup","read-only":"false","label":"unnamed-chunk-2","editor-max-height":"","editor-quick-suggestions":"false","context":"interactive","fig-cap":"","comment":"","autorun":"false","classes":"","fig-width":7,"out-width":"700px","message":"true","fig-height":5},"id":2},{"code":"library(palmerpenguins)\ntable(penguins$island)","options":{"out-height":"","warning":"true","dpi":72,"editor-font-scale":1,"output":"true","results":"markup","read-only":"false","label":"unnamed-chunk-3","editor-max-height":"","editor-quick-suggestions":"false","context":"interactive","fig-cap":"","comment":"","autorun":"false","classes":"","fig-width":7,"out-width":"700px","message":"true","fig-height":5},"id":3},{"code":"\ntable(penguins$species)","options":{"out-height":"","warning":"true","dpi":72,"editor-font-scale":1,"output":"true","results":"markup","read-only":"false","label":"unnamed-chunk-4","editor-max-height":"","editor-quick-suggestions":"false","context":"output","fig-cap":"","comment":"","autorun":"true","classes":"","fig-width":7,"out-width":"700px","message":"true","fig-height":5},"id":4}];
+  globalThis.qwebrCellDetails = [{"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n#webr::mount(mountpoint = \"/data\",\n#  source = \"./data\",\n#  type = \"NODEFS\")\n#penguins = read.csv(\"/data/penguins.csv\")","id":1,"options":{"out-height":"","fig-height":5,"warning":"true","fig-width":7,"autorun":"true","editor-quick-suggestions":"false","results":"markup","context":"setup","comment":"","editor-font-scale":1,"message":"true","editor-max-height":"","read-only":"false","label":"unnamed-chunk-1","classes":"","output":"true","fig-cap":"","out-width":"700px","dpi":72}},{"code":"ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +\n  geom_boxplot()","id":2,"options":{"out-height":"","fig-height":5,"warning":"true","fig-width":7,"autorun":"false","editor-quick-suggestions":"false","results":"markup","context":"interactive","comment":"","editor-font-scale":1,"message":"true","editor-max-height":"","read-only":"false","label":"unnamed-chunk-2","classes":"","output":"true","fig-cap":"","out-width":"700px","dpi":72}},{"code":"library(palmerpenguins)\ntable(penguins$island)","id":3,"options":{"out-height":"","fig-height":5,"warning":"true","fig-width":7,"autorun":"false","editor-quick-suggestions":"false","results":"markup","context":"interactive","comment":"","editor-font-scale":1,"message":"true","editor-max-height":"","read-only":"false","label":"unnamed-chunk-3","classes":"","output":"true","fig-cap":"","out-width":"700px","dpi":72}},{"code":"\ntable(penguins$species)","id":4,"options":{"out-height":"","fig-height":5,"warning":"true","fig-width":7,"autorun":"true","editor-quick-suggestions":"false","results":"markup","context":"output","comment":"","editor-font-scale":1,"message":"true","editor-max-height":"","read-only":"false","label":"unnamed-chunk-4","classes":"","output":"true","fig-cap":"","out-width":"700px","dpi":72}},{"code":"download.file('https://laderast.github.io/webr-demo/data/penguins.csv', 'penguins.csv')\nlist.files()","id":5,"options":{"out-height":"","fig-height":5,"warning":"true","fig-width":7,"autorun":"false","editor-quick-suggestions":"false","results":"markup","context":"interactive","comment":"","editor-font-scale":1,"message":"true","editor-max-height":"","read-only":"false","label":"unnamed-chunk-5","classes":"","output":"true","fig-cap":"","out-width":"700px","dpi":72}},{"code":"penguins2 <- read.csv(\"penguins.csv\")\nsummary(penguins2)","id":6,"options":{"out-height":"","fig-height":5,"warning":"true","fig-width":7,"autorun":"false","editor-quick-suggestions":"false","results":"markup","context":"interactive","comment":"","editor-font-scale":1,"message":"true","editor-max-height":"","read-only":"false","label":"unnamed-chunk-6","classes":"","output":"true","fig-cap":"","out-width":"700px","dpi":72}}];
 
   </script>
   <script type="module">
@@ -1673,6 +1670,14 @@ Ted Laderas
 </div>
 
 </section>
+<section class="slide level2">
+
+<div class="cell">
+<script>
+webR.evalRVoid("download.file('https://laderast.github.io/webr-demo/data/penguins.csv', 'penguins.csv')");
+</script>
+</div>
+</section>
 <section id="this-presentation" class="slide level2">
 <h2>This Presentation</h2>
 <ul>
@@ -1693,7 +1698,7 @@ Ted Laderas
 <ul>
 <li>Education</li>
 <li>Internal Websites</li>
-<li></li>
+<li>Give other people a chance with data</li>
 </ul>
 </section>
 <section id="how-does-webr-work" class="slide level2">
@@ -1707,19 +1712,13 @@ Ted Laderas
 </ul></li>
 </ul>
 </section>
-<section id="an-endless-loop-kind-of" class="slide level2">
-<h2>An Endless Loop (kind of)</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js"></pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+<section id="webr-worker" class="slide level2">
+<h2>WebR Worker</h2>
+<ul>
+<li>WebR launches a <strong>worker process</strong> in browser</li>
+<li>Uses JavaScript to communicate between web page and worker</li>
+<li>Everything is run in the browser</li>
+</ul>
 </section>
 <section id="webr-documentation" class="slide level2">
 <h2>WebR documentation</h2>
@@ -1727,25 +1726,25 @@ Ted Laderas
 <li>Very technical</li>
 <li>Specifies how to get JS to interact with WebR in a web page</li>
 <li>Asynchronous evaluation</li>
+<li><strong>Made for developers</strong></li>
 </ul>
 </section>
-<section id="recommended-quartowebr-documentation" class="slide level2">
-<h2>Recommended: Quarto/WebR documentation</h2>
+<section id="recommended-for-users-quartowebr-documentation" class="slide level2">
+<h2>Recommended for Users: Quarto/WebR documentation</h2>
 <ul>
 <li><a href="https://quarto-webr.thecoatlessprofessor.com/">Quarto WebR documentation</a></li>
-</ul>
-</section>
-<section id="you-dont-have-to-worry-about-this" class="slide level2">
-<h2>You don’t have to worry about this!</h2>
-<ul>
 <li>Quarto/WebR extension</li>
 <li>Handles the communication between JS and WebR</li>
 <li>Don’t worry!</li>
 </ul>
 </section>
 <section>
-<section id="first-create-a-project" class="title-slide slide level1 center">
-<h1>First, Create a Project</h1>
+<section id="getting-started-with-quartowebr" class="title-slide slide level1 center">
+<h1>Getting started with Quarto/WebR</h1>
+
+</section>
+<section id="first-create-a-project" class="slide level2">
+<h2>First, Create a Project</h2>
 <p>File &gt;&gt; New Project &gt;&gt; New Folder &gt;&gt; Quarto Website</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="ex">├──</span> _quarto.yml</span>
 <span id="cb1-2"><a></a><span class="ex">├──</span> _site</span>
@@ -1777,7 +1776,10 @@ Ted Laderas
 <span id="cb4-2" class="hljs-ln-code"><a></a><span class="an">format:</span><span class="co"> revealjs</span></span>
 <span id="cb4-3" class="hljs-ln-code"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Start like usual, specify <code>engine: knitr</code></p>
+<ul>
+<li>Start like usual</li>
+<li>specify <code>engine: knitr</code></li>
+</ul>
 </section>
 <section id="quartowebr-setup-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Quarto/WebR Setup</h2>
@@ -1806,13 +1808,19 @@ Ted Laderas
 <section id="a-note-about-packages" class="slide level2">
 <h2>A Note about Packages</h2>
 <ul>
-<li>Packages need to be compiled for WebAssembly</li>
+<li>Packages need to be compiled for WebAssembly
+<ul>
+<li><code>{wasm}</code> package</li>
+</ul></li>
 <li>Need to solve dependencies</li>
 <li><a href="https://repo.r-wasm.org/">WebR Compiled Packages</a>
 <ul>
 <li>Default repository for packages (16000+ compiled, but not everything)</li>
 </ul></li>
-<li><a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html">Using R Packages in WebR</a></li>
+<li><a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html">Using R Packages in WebR</a>
+<ul>
+<li>Can install in realtime or using the <code>webr:packages</code> option</li>
+</ul></li>
 </ul>
 </section></section>
 <section>
@@ -1865,9 +1873,37 @@ Ted Laderas
 <section id="what-about-files" class="slide level2">
 <h2>What about files?</h2>
 <ul>
-<li>There is a filesystem that is created</li>
+<li>There is a filesystem that is created
+<ul>
+<li>emscripten webassembly filesystem</li>
+</ul></li>
 <li>Not super easy to get stuff in</li>
+<li>Distinct from your project
+<ul>
+<li>can’t see anything in your directory</li>
+</ul></li>
 </ul>
+</section>
+<section id="options-to-get-data-in" class="slide level2">
+<h2>Options to get data in</h2>
+<ul>
+<li>Data packages</li>
+<li>Serve data at a URL
+<ul>
+<li>URL needs to be <code>https://</code></li>
+<li><code>download.file()</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="getting-data-in-from-a-url" class="slide level2">
+<h2>Getting data in from a URL</h2>
+<div id="qwebr-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="loading-data-in-the-filesystem" class="slide level2">
+<h2>Loading data in the filesystem</h2>
+<div id="qwebr-insertion-location-6"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="deployment" class="slide level2">
 <h2>Deployment</h2>
@@ -1889,10 +1925,6 @@ Ted Laderas
 <p>Or netlify:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="ex">quarto</span> publish netlify ./</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="deployment-3" class="slide level2">
-<h2>Deployment</h2>
-<p>Or Github Actions:</p>
-</section>
 <section id="what-about-shiny" class="slide level2">
 <h2>What about Shiny?</h2>
 <p><a href="">Shinylive</a></p>
@@ -1912,7 +1944,7 @@ Ted Laderas
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-
+<p>https://laderast.github.io/webr-demo</p>
 </div>
 </div>
 </section></section>
