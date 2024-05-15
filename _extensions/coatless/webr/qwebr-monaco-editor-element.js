@@ -26,7 +26,9 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
       minimap: {
         enabled: false
       },
-      fontSize: qwebrScaledFontSize(editorDiv, qwebrOptions),         
+      fontSize: 30,         
+      // fontSize: qwebrScaledFontSize(editorDiv, qwebrOptions),         
+
       renderLineHighlight: "none",      // Disable current line highlighting
       hideCursorInOverviewRuler: true,  // Remove cursor indictor in right hand side scroll bar
       readOnly: qwebrOptions['read-only'] ?? false,

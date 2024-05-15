@@ -47,6 +47,10 @@ body.quarto-dark .qwebr-output-code-stdout {
   color: #db4133;
 }
 
+.qwebr-console-area {
+  font-size: 15;
+}
+
 body.quarto-light .qwebr-editor {
   border: 1px solid #EEEEEE;
 }

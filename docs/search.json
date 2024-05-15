@@ -144,7 +144,7 @@
     "href": "index.html#deployment-1",
     "title": "WebR: Why, What, How",
     "section": "Deployment",
-    "text": "Deployment\n\nCan use github pages:\nquarto publish gh-pages ./"
+    "text": "Deployment\n\nCan use github pages:\nquarto publish gh-pages ./\nNetlify\nquarto publish netlify ./"
   },
   {
     "objectID": "index.html#deployment-2",
@@ -179,7 +179,7 @@
     "href": "index.html#resources",
     "title": "WebR: Why, What, How",
     "section": "Resources",
-    "text": "Resources\n\nQuarto/WebR extension\nHow to Run R in the Browser with WebR (Danielle Navarro)\nWebR Developer Resources\nQuarto/WebR Experiments (Bob Rudis)\nWebR Filesystem (Bob Rudis)\n\n\n\n\nhttps://laderast.github.io/webr-demo"
+    "text": "Resources\n\nWebR Filesystem (Bob Rudis)\nTeaching with WebR - Nicola Rennie\nBob Rudis’ WebR Talk - much more about the indepth details of WebR\nQuarto/WebR extension - What I’ve been talking about\nWebR Developer Resources\n\n\n\n\nhttps://laderast.github.io/webr-demo"
   },
   {
     "objectID": "index.html#options",
@@ -236,5 +236,19 @@
     "title": "WebR: Why, What, How",
     "section": "Options to get data in",
     "text": "Options to get data in\n\nData packages\nServe data at a URL\n\nURL needs to be https://\ndownload.file()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "WebR: Why, What, How",
+    "section": "",
+    "text": "What?\nWhy?\nHow?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]

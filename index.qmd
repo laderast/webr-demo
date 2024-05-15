@@ -4,7 +4,7 @@ author: Ted Laderas
 engine: knitr
 filters: 
   - webr
-format: 
+format:
   revealjs:
     footer: https://laderast.github.io/webr-demo
     resources:
@@ -13,10 +13,6 @@ webr:
   packages: ['ggplot2', 'dplyr', 'palmerpenguins']
   
 ---
-
-```{js}
-webR.evalRVoid("download.file('https://laderast.github.io/webr-demo/data/penguins.csv', 'penguins.csv')");
-```
 
 ## This Presentation
 
@@ -38,7 +34,8 @@ library(palmerpenguins)
 ## What is WebR?
 
 ```{webr-r}
-ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +
+ggplot(diamonds, aes(x=cut, y=carat, 
+                     fill=cut)) +
   geom_boxplot()
 ```
 
@@ -212,7 +209,7 @@ table(penguins$species)
 ## What about files?
 
 - There is a filesystem that is created
-  - emscripten webassembly filesystem
+  - emscripten filesystem
 - Not super easy to get stuff in
 - Distinct from your project
   - can't see anything in your directory
@@ -226,8 +223,12 @@ table(penguins$species)
 
 ## Getting data in from a URL
 
+For teaching, put in a `context: setup` chunk:
+
 ```{webr-r}
-download.file('https://laderast.github.io/webr-demo/data/penguins.csv', 'penguins.csv')
+list.files()
+url <- 'https://laderast.github.io/webr-demo/data/penguins.csv'
+download.file(url, 'penguins.csv')
 list.files()
 ```
 
@@ -235,7 +236,8 @@ list.files()
 
 ```{webr-r}
 penguins2 <- read.csv("penguins.csv")
-summary(penguins2)
+penguins2 |>
+  count(species)
 ```
 
 
@@ -253,10 +255,7 @@ summary(penguins2)
   ```bash
   quarto publish gh-pages ./
   ```
-  
-## Deployment
-
-Or netlify:
+- Netlify
 
   ```bash
   quarto publish netlify ./
@@ -266,15 +265,14 @@ Or netlify:
 
 ## What about Shiny?
 
-[Shinylive]()
-
-## Security
+[Shinylive](https://shinylive.io/r/examples/)
 
 
 ## Resources
 
-- [Quarto/WebR extension](https://quarto-webr.thecoatlessprofessor.com/)
-- [How to Run R in the Browser with WebR (Danielle Navarro)](https://blog.djnavarro.net/posts/2023-04-09_webr/)
-- [WebR Developer Resources](https://quarto-webr.thecoatlessprofessor.com/qwebr-developer-resources.html)
-- [Quarto/WebR Experiments (Bob Rudis)](https://github.com/hrbrmstr/webr-experiments)
 - [WebR Filesystem (Bob Rudis)](https://rud.is/w/fs/)
+- [Teaching with WebR - Nicola Rennie](https://nrennie.rbind.io/teaching-with-webR/#/title-slide)
+- [Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/) - much more about the indepth details of WebR
+- [Quarto/WebR extension](https://quarto-webr.thecoatlessprofessor.com/) - What I've been talking about
+- [WebR Developer Resources](https://quarto-webr.thecoatlessprofessor.com/qwebr-developer-resources.html)
+
