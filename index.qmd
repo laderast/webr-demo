@@ -226,7 +226,7 @@ Add another layer to the below plot by appending a `geom_point(aes(color=species
 #| warning: false
 ggplot(penguins) +
   aes(x=bill_length_mm, y=bill_depth_mm) +
-  geom_hex()
+  geom_hex() + ---------
 
 ```
 

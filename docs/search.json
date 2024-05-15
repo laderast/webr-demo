@@ -18,7 +18,7 @@
     "href": "index.html#why-webr",
     "title": "WebR: Why, What, How",
     "section": "Why WebR?",
-    "text": "Why WebR?\n\nEducation\nInternal Websites\nGive other people a chance with data"
+    "text": "Why WebR?\n\nEducation\nInternal Websites\nShinylive (Shiny without Shiny Server)"
   },
   {
     "objectID": "index.html#how-does-webr-work",
@@ -67,28 +67,28 @@
     "href": "index.html#quartowebr-setup-1",
     "title": "WebR: Why, What, How",
     "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: revealjs\nengine: knitr\n\n\nStart like usual\nspecify engine: knitr"
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\n\n\nStart like usual\nspecify engine: knitr"
   },
   {
     "objectID": "index.html#quartowebr-setup-2",
     "href": "index.html#quartowebr-setup-2",
     "title": "WebR: Why, What, How",
     "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: revealjs\nengine: knitr\nfilters:                     \n  - webr                     \n\nNeed to use filters with - webr option"
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                     \n  - webr                     \n\nNeed to use filters with - webr option"
   },
   {
     "objectID": "index.html#quartowebr-setup-3",
     "href": "index.html#quartowebr-setup-3",
     "title": "WebR: Why, What, How",
     "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: revealjs\nengine: knitr\nfilters:                         \n  - webr                         \nwebr:                            \n  packages: ['ggplot2', 'dplyr', 'palmerpenguins']\n\nwebr is where you set options, including which packages to install"
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                         \n  - webr                         \nwebr:                            \n  packages: ['ggplot2', 'dplyr', 'palmerpenguins']\n\nwebr is where you set options, including which packages to install"
   },
   {
     "objectID": "index.html#a-note-about-packages",
     "href": "index.html#a-note-about-packages",
     "title": "WebR: Why, What, How",
     "section": "A Note about Packages",
-    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\n\n{wasm} package\n\nNeed to solve dependencies\nWebR Compiled Packages\n\nDefault repository for packages (16000+ compiled, but not everything)\n\nUsing R Packages in WebR\n\nCan install in realtime or using the webr:packages option"
+    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\n\n{rwasm} package\n\nNeed to solve dependencies\nWebR Compiled Packages\n\nDefault repository for packages (16000+ compiled, but not everything)\n\nUsing R Packages in WebR\n\nCan install in realtime or using the webr:packages option"
   },
   {
     "objectID": "index.html#quartowebr-block",
@@ -130,14 +130,14 @@
     "href": "index.html#what-about-files",
     "title": "WebR: Why, What, How",
     "section": "What about files?",
-    "text": "What about files?\n\nThere is a filesystem that is created\n\nemscripten webassembly filesystem\n\nNot super easy to get stuff in\nDistinct from your project\n\ncan’t see anything in your directory"
+    "text": "What about files?\n\nThere is a filesystem that is created\n\nemscripten filesystem\n\nNot super easy to get stuff in\nDistinct from your project\n\ncan’t see anything in your directory"
   },
   {
     "objectID": "index.html#deployment",
     "href": "index.html#deployment",
     "title": "WebR: Why, What, How",
     "section": "Deployment",
-    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nDo not need a Shiny server, just something that serves HTML\nRemember, all computations are done in the browser"
+    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nDo not need a Shiny server, just something that serves HTML\nBrowser needs internet access to download packages\nAll computations are done in the browser"
   },
   {
     "objectID": "index.html#deployment-1",
@@ -200,7 +200,7 @@
     "href": "index.html#getting-data-in-from-a-url",
     "title": "WebR: Why, What, How",
     "section": "Getting data in from a URL",
-    "text": "Getting data in from a URL\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Getting data in from a URL\nFor teaching, put in a context: setup chunk:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "index.html#loading-data-in-the-filesystem",
@@ -228,7 +228,7 @@
     "href": "index.html#recommended-for-users-quartowebr-documentation",
     "title": "WebR: Why, What, How",
     "section": "Recommended for Users: Quarto/WebR documentation",
-    "text": "Recommended for Users: Quarto/WebR documentation\n\nQuarto WebR documentation\nQuarto/WebR extension\nHandles the communication between JS and WebR\nDon’t worry!"
+    "text": "Recommended for Users: Quarto/WebR documentation\n\nBy James Balamuta and company\nQuarto WebR documentation\nQuarto/WebR extension\nHandles the communication between JS and WebR\nDon’t worry!"
   },
   {
     "objectID": "index.html#options-to-get-data-in",
@@ -250,5 +250,26 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#this-is-a-huge-accomplishment",
+    "href": "index.html#this-is-a-huge-accomplishment",
+    "title": "WebR: Why, What, How",
+    "section": "This is a huge accomplishment",
+    "text": "This is a huge accomplishment\n\nGetting FORTRAN packages to compile\n\n Source: Bob Rudis’ WebR Talk"
+  },
+  {
+    "objectID": "index.html#where-to-read-about-webr",
+    "href": "index.html#where-to-read-about-webr",
+    "title": "WebR: Why, What, How",
+    "section": "Where to read about WebR?",
+    "text": "Where to read about WebR?\nWebR documentation\n\nVery technical\nSpecifies how to get JS to interact with WebR in a web page\nAsynchronous evaluation\nMade for developers"
+  },
+  {
+    "objectID": "index.html#adding-layers",
+    "href": "index.html#adding-layers",
+    "title": "WebR: Why, What, How",
+    "section": "Adding Layers",
+    "text": "Adding Layers\nAdd another layer to the below plot by appending a geom_point(aes(color=species)) to it.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   }
 ]
