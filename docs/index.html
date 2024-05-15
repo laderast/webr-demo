@@ -593,7 +593,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(penguins)","id":1,"options":{"results":"markup","fig-cap":"","context":"setup","fig-height":5,"comment":"","label":"unnamed-chunk-1","editor-quick-suggestions":"false","output":"true","out-height":"","dpi":72,"read-only":"false","out-width":"700px","message":"true","editor-max-height":"","warning":"true","autorun":"true","fig-width":7,"classes":"","editor-font-scale":1}},{"code":"ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +\n  geom_boxplot()","id":2,"options":{"results":"markup","fig-cap":"","context":"interactive","fig-height":5,"comment":"","label":"unnamed-chunk-2","editor-quick-suggestions":"false","output":"true","out-height":"","dpi":72,"read-only":"false","out-width":"700px","message":"true","editor-max-height":"","warning":"true","autorun":"false","fig-width":7,"classes":"","editor-font-scale":1}},{"code":"library(palmerpenguins)\ntable(penguins$island)","id":3,"options":{"results":"markup","fig-cap":"","context":"interactive","fig-height":5,"comment":"","label":"unnamed-chunk-3","editor-quick-suggestions":"false","output":"true","out-height":"","dpi":72,"read-only":"false","out-width":"700px","message":"true","editor-max-height":"","warning":"true","autorun":"false","fig-width":7,"classes":"","editor-font-scale":1}},{"code":"\ntable(penguins$species)","id":4,"options":{"results":"markup","fig-cap":"","context":"output","fig-height":5,"comment":"","label":"unnamed-chunk-4","editor-quick-suggestions":"false","output":"true","out-height":"","dpi":72,"read-only":"false","out-width":"700px","message":"true","editor-max-height":"","warning":"true","autorun":"true","fig-width":7,"classes":"","editor-font-scale":1}}];
+  globalThis.qwebrCellDetails = [{"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(penguins)\n#webr::mount(mountpoint = \"/data\",\n#  source = \"./data\",\n#  type = \"NODEFS\")\n#penguins = read.csv(\"/data/penguins.csv\")","options":{"out-height":"","warning":"true","dpi":72,"editor-font-scale":1,"output":"true","results":"markup","read-only":"false","label":"unnamed-chunk-1","editor-max-height":"","editor-quick-suggestions":"false","context":"setup","fig-cap":"","comment":"","autorun":"true","classes":"","fig-width":7,"out-width":"700px","message":"true","fig-height":5},"id":1},{"code":"ggplot(diamonds, aes(x=cut, y=carat, fill=cut)) +\n  geom_boxplot()","options":{"out-height":"","warning":"true","dpi":72,"editor-font-scale":1,"output":"true","results":"markup","read-only":"false","label":"unnamed-chunk-2","editor-max-height":"","editor-quick-suggestions":"false","context":"interactive","fig-cap":"","comment":"","autorun":"false","classes":"","fig-width":7,"out-width":"700px","message":"true","fig-height":5},"id":2},{"code":"library(palmerpenguins)\ntable(penguins$island)","options":{"out-height":"","warning":"true","dpi":72,"editor-font-scale":1,"output":"true","results":"markup","read-only":"false","label":"unnamed-chunk-3","editor-max-height":"","editor-quick-suggestions":"false","context":"interactive","fig-cap":"","comment":"","autorun":"false","classes":"","fig-width":7,"out-width":"700px","message":"true","fig-height":5},"id":3},{"code":"\ntable(penguins$species)","options":{"out-height":"","warning":"true","dpi":72,"editor-font-scale":1,"output":"true","results":"markup","read-only":"false","label":"unnamed-chunk-4","editor-max-height":"","editor-quick-suggestions":"false","context":"output","fig-cap":"","comment":"","autorun":"true","classes":"","fig-width":7,"out-width":"700px","message":"true","fig-height":5},"id":4}];
 
   </script>
   <script type="module">
@@ -1759,7 +1759,7 @@ Ted Laderas
 <ul>
 <li>In the RStudio Terminal Window:</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">quarto</span> install coatless/quarto-webr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">quarto</span> add coatless/quarto-webr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This folder will be installed in your project:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="ex">├──</span> _extensions</span>
 <span id="cb3-2"><a></a><span class="ex">│</span>   └── coatless</span>
@@ -1810,7 +1810,7 @@ Ted Laderas
 <li>Need to solve dependencies</li>
 <li><a href="https://repo.r-wasm.org/">WebR Compiled Packages</a>
 <ul>
-<li>Default repository for packages</li>
+<li>Default repository for packages (16000+ compiled, but not everything)</li>
 </ul></li>
 <li><a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html">Using R Packages in WebR</a></li>
 </ul>
@@ -1906,7 +1906,7 @@ Ted Laderas
 <li><a href="https://quarto-webr.thecoatlessprofessor.com/">Quarto/WebR extension</a></li>
 <li><a href="https://blog.djnavarro.net/posts/2023-04-09_webr/">How to Run R in the Browser with WebR (Danielle Navarro)</a></li>
 <li><a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-developer-resources.html">WebR Developer Resources</a></li>
-<li><a href="https://github.com/hrbrmstr/webr-experiments">Quarto/WebR Experments (Bob Rudis)</a></li>
+<li><a href="https://github.com/hrbrmstr/webr-experiments">Quarto/WebR Experiments (Bob Rudis)</a></li>
 <li><a href="https://rud.is/w/fs/">WebR Filesystem (Bob Rudis)</a></li>
 </ul>
 

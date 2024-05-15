@@ -9,6 +9,8 @@ webr:
   packages: ['ggplot2', 'dplyr', 'palmerpenguins']
 ---
 
+
+
 ## This Presentation
 
 - What?
@@ -20,6 +22,10 @@ webr:
 library(dplyr)
 library(ggplot2)
 library(penguins)
+#webr::mount(mountpoint = "/data",
+#  source = "./data",
+#  type = "NODEFS")
+#penguins = read.csv("/data/penguins.csv")
 ```
 
 ## What is WebR?
@@ -86,7 +92,7 @@ File >> New Project >> New Folder >> Quarto Website
 - In the RStudio Terminal Window:
 
 ```bash
-quarto install coatless/quarto-webr
+quarto add coatless/quarto-webr
 ```
 
 This folder will be installed in your project:
@@ -140,7 +146,7 @@ webr:
 - Packages need to be compiled for WebAssembly
 - Need to solve dependencies
 - [WebR Compiled Packages](https://repo.r-wasm.org/)
-  - Default repository for packages
+  - Default repository for packages (16000+ compiled, but not everything)
 - [Using R Packages in WebR](https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html)
 
 # Add Your Code Blocks
@@ -200,6 +206,19 @@ table(penguins$species)
 
 - There is a filesystem that is created
 - Not super easy to get stuff in
+- Distinct from your project
+
+## Options
+
+- Packages
+- Serve data at a URL
+  - URL needs to be `https://`
+  - `download.file()`
+
+## 
+
+- Serve data from website folder
+  
 
 
 ## Deployment
@@ -229,7 +248,7 @@ Or netlify:
 
 Or Github Actions:
 
-
+  
 
 
 ## What about Shiny?
@@ -244,5 +263,5 @@ Or Github Actions:
 - [Quarto/WebR extension](https://quarto-webr.thecoatlessprofessor.com/)
 - [How to Run R in the Browser with WebR (Danielle Navarro)](https://blog.djnavarro.net/posts/2023-04-09_webr/)
 - [WebR Developer Resources](https://quarto-webr.thecoatlessprofessor.com/qwebr-developer-resources.html)
-- [Quarto/WebR Experments (Bob Rudis)](https://github.com/hrbrmstr/webr-experiments)
+- [Quarto/WebR Experiments (Bob Rudis)](https://github.com/hrbrmstr/webr-experiments)
 - [WebR Filesystem (Bob Rudis)](https://rud.is/w/fs/)

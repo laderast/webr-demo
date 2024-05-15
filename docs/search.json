@@ -60,7 +60,7 @@
     "href": "index.html#next-install-quarto-extension-in-project",
     "title": "WebR: Why, What, How",
     "section": "Next, install Quarto Extension in Project",
-    "text": "Next, install Quarto Extension in Project\n\nIn the RStudio Terminal Window:\n\nquarto install coatless/quarto-webr\nThis folder will be installed in your project:\n├── _extensions\n│   └── coatless\n│       └── webr  ## Contains a lot of JavaScript"
+    "text": "Next, install Quarto Extension in Project\n\nIn the RStudio Terminal Window:\n\nquarto add coatless/quarto-webr\nThis folder will be installed in your project:\n├── _extensions\n│   └── coatless\n│       └── webr  ## Contains a lot of JavaScript"
   },
   {
     "objectID": "index.html#quartowebr-setup-1",
@@ -88,7 +88,7 @@
     "href": "index.html#a-note-about-packages",
     "title": "WebR: Why, What, How",
     "section": "A Note about Packages",
-    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\nNeed to solve dependencies\nWebR Compiled Packages\n\nDefault repository for packages\n\nUsing R Packages in WebR"
+    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\nNeed to solve dependencies\nWebR Compiled Packages\n\nDefault repository for packages (16000+ compiled, but not everything)\n\nUsing R Packages in WebR"
   },
   {
     "objectID": "index.html#quartowebr-block",
@@ -179,6 +179,6 @@
     "href": "index.html#resources",
     "title": "WebR: Why, What, How",
     "section": "Resources",
-    "text": "Resources\n\nQuarto/WebR extension\nHow to Run R in the Browser with WebR (Danielle Navarro)\nWebR Developer Resources\nQuarto/WebR Experments (Bob Rudis)\nWebR Filesystem (Bob Rudis)"
+    "text": "Resources\n\nQuarto/WebR extension\nHow to Run R in the Browser with WebR (Danielle Navarro)\nWebR Developer Resources\nQuarto/WebR Experiments (Bob Rudis)\nWebR Filesystem (Bob Rudis)"
   }
 ]
