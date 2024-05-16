@@ -1,11 +1,15 @@
 ---
 title: "WebR: Why, What, How"
+subtitle: "PDX-R Meetup"
+date: 5/15/2024
 author: Ted Laderas
 engine: knitr
 filters: 
   - webr
 format:
   revealjs:
+    auto-stretch: false
+    incremental: true
     footer: https://laderast.github.io/webr-demo
     resources:
       - data/*
@@ -53,9 +57,9 @@ ggplot(diamonds, aes(x=cut, y=carat,
 - Results are returned within a `<div>`
   - Special R canvas called HTML
 
-## This is a huge accomplishment
+## This is a huge accomplishment {background-color="black"}
 
-![](111-002.png)
+![](111-002.png){width="70%"}
 [Source: Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/#/now)
 
 ## WebR Worker
@@ -262,6 +266,10 @@ penguins2 |>
   count(species)
 ```
 
+## `rwasm::file_packager()`
+
+- Lets you package a folder into a filesystem
+- Still needs to be hosted somewhere
 
 ## Deployment
 
@@ -300,3 +308,9 @@ penguins2 |>
 - [Quarto/WebR extension](https://quarto-webr.thecoatlessprofessor.com/) - What I've been talking about
 - [WebR Developer Resources](https://quarto-webr.thecoatlessprofessor.com/qwebr-developer-resources.html)
 
+
+## Keep in Touch
+
+- <https://elk.vmst.io/vmst.io/@tladeras>
+- tedladeras at gmail
+- <https://laderast.github.io>

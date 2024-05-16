@@ -88,7 +88,7 @@
     "href": "index.html#a-note-about-packages",
     "title": "WebR: Why, What, How",
     "section": "A Note about Packages",
-    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\n\n{rwasm} package\n\nNeed to solve dependencies\nWebR Compiled Packages\n\nDefault repository for packages (16000+ compiled, but not everything)\n\nUsing R Packages in WebR\n\nCan install in realtime or using the webr:packages option"
+    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\n\n{rwasm} package\nNeed to solve dependencies\n\nWebR Compiled Packages\n\nDefault repository for packages (16000+ compiled, but not everything)\n\nUsing R Packages in WebR\n\nCan install in realtime or using the webr:packages option"
   },
   {
     "objectID": "index.html#quartowebr-block",
@@ -179,7 +179,7 @@
     "href": "index.html#resources",
     "title": "WebR: Why, What, How",
     "section": "Resources",
-    "text": "Resources\n\nWebR Filesystem (Bob Rudis)\nTeaching with WebR - Nicola Rennie\nBob Rudis’ WebR Talk - much more about the indepth details of WebR\nQuarto/WebR extension - What I’ve been talking about\nWebR Developer Resources\n\n\n\n\nhttps://laderast.github.io/webr-demo"
+    "text": "Resources\n\nWebR Filesystem (Bob Rudis)\nTeaching with WebR - Nicola Rennie\nBob Rudis’ WebR Talk - much more about the indepth details of WebR\nQuarto/WebR extension - What I’ve been talking about\nWebR Developer Resources"
   },
   {
     "objectID": "index.html#options",
@@ -271,5 +271,19 @@
     "title": "WebR: Why, What, How",
     "section": "Adding Layers",
     "text": "Adding Layers\nAdd another layer to the below plot by appending a geom_point(aes(color=species)) to it.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#rwasmfile_packager",
+    "href": "index.html#rwasmfile_packager",
+    "title": "WebR: Why, What, How",
+    "section": "rwasm::file_packager()",
+    "text": "rwasm::file_packager()\n\nLets you package a folder into a filesystem\nStill needs to be hosted somewhere"
+  },
+  {
+    "objectID": "index.html#keep-in-touch",
+    "href": "index.html#keep-in-touch",
+    "title": "WebR: Why, What, How",
+    "section": "Keep in Touch",
+    "text": "Keep in Touch\n\nhttps://elk.vmst.io/vmst.io/@tladeras\ntedladeras at gmail\nhttps://laderast.github.io\n\n\n\n\nhttps://laderast.github.io/webr-demo"
   }
 ]
