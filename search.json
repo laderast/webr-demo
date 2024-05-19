@@ -28,32 +28,39 @@
     "text": "How does WebR work?\n\nBrowsers include WebAssembly and JavaScript\nWebpages use Javascript to execute WebR scripts\nResults are returned within a &lt;div&gt;\n\nSpecial R canvas called HTML"
   },
   {
-    "objectID": "index.html#an-endless-loop-kind-of",
-    "href": "index.html#an-endless-loop-kind-of",
+    "objectID": "index.html#this-is-a-huge-accomplishment",
+    "href": "index.html#this-is-a-huge-accomplishment",
     "title": "WebR: Why, What, How",
-    "section": "An Endless Loop (kind of)",
-    "text": "An Endless Loop (kind of)"
+    "section": "This is a huge accomplishment",
+    "text": "This is a huge accomplishment\n Source: Bob Rudis’ WebR Talk"
   },
   {
-    "objectID": "index.html#webr-documentation",
-    "href": "index.html#webr-documentation",
+    "objectID": "index.html#webr-worker",
+    "href": "index.html#webr-worker",
     "title": "WebR: Why, What, How",
-    "section": "WebR documentation",
-    "text": "WebR documentation\n\nVery technical\nSpecifies how to get JS to interact with WebR in a web page\nAsynchronous evaluation\nMade for developers"
+    "section": "WebR Worker",
+    "text": "WebR Worker\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser"
   },
   {
-    "objectID": "index.html#recommended-quartowebr-documentation",
-    "href": "index.html#recommended-quartowebr-documentation",
+    "objectID": "index.html#where-to-read-about-webr",
+    "href": "index.html#where-to-read-about-webr",
     "title": "WebR: Why, What, How",
-    "section": "Recommended: Quarto/WebR documentation",
-    "text": "Recommended: Quarto/WebR documentation\n\nQuarto WebR documentation"
+    "section": "Where to read about WebR?",
+    "text": "Where to read about WebR?\nWebR documentation\n\nVery technical\nSpecifies how to get JS to interact with WebR in a web page\nAsynchronous evaluation\nMade for developers"
   },
   {
-    "objectID": "index.html#you-dont-have-to-worry-about-this",
-    "href": "index.html#you-dont-have-to-worry-about-this",
+    "objectID": "index.html#recommended-for-users-quartowebr-documentation",
+    "href": "index.html#recommended-for-users-quartowebr-documentation",
     "title": "WebR: Why, What, How",
-    "section": "You don’t have to worry about this!",
-    "text": "You don’t have to worry about this!\n\nQuarto/WebR extension\nHandles the communication between JS and WebR\nDon’t worry!"
+    "section": "Recommended for Users: Quarto/WebR documentation",
+    "text": "Recommended for Users: Quarto/WebR documentation\n\nBy James Balamuta and company\nQuarto WebR documentation\nQuarto/WebR extension\nHandles the communication between JS and WebR\nDon’t worry!"
+  },
+  {
+    "objectID": "index.html#first-create-a-project",
+    "href": "index.html#first-create-a-project",
+    "title": "WebR: Why, What, How",
+    "section": "First, Create a Project",
+    "text": "First, Create a Project\nFile &gt;&gt; New Project &gt;&gt; New Folder &gt;&gt; Quarto Website\n├── _quarto.yml\n├── _site\n├── about.qmd\n├── index.qmd\n├── styles.css\n└── webr-demo.Rproj"
   },
   {
     "objectID": "index.html#next-install-quarto-extension-in-project",
@@ -126,6 +133,13 @@
     "text": "context: output\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
+    "objectID": "index.html#adding-layers",
+    "href": "index.html#adding-layers",
+    "title": "WebR: Why, What, How",
+    "section": "Adding Layers",
+    "text": "Adding Layers\nAdd another layer to the below plot by appending a geom_point(aes(color=species)) to it.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
     "objectID": "index.html#what-about-files",
     "href": "index.html#what-about-files",
     "title": "WebR: Why, What, How",
@@ -133,67 +147,11 @@
     "text": "What about files?\n\nThere is a filesystem that is created\n\nemscripten filesystem\n\nNot super easy to get stuff in\nDistinct from your project\n\ncan’t see anything in your directory"
   },
   {
-    "objectID": "index.html#deployment",
-    "href": "index.html#deployment",
+    "objectID": "index.html#options-to-get-data-in",
+    "href": "index.html#options-to-get-data-in",
     "title": "WebR: Why, What, How",
-    "section": "Deployment",
-    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nDo not need a Shiny server, just something that serves HTML\nBrowser needs internet access to download packages\nAll computations are done in the browser"
-  },
-  {
-    "objectID": "index.html#deployment-1",
-    "href": "index.html#deployment-1",
-    "title": "WebR: Why, What, How",
-    "section": "Deployment",
-    "text": "Deployment\n\nCan use github pages:\nquarto publish gh-pages ./\nNetlify\nquarto publish netlify ./"
-  },
-  {
-    "objectID": "index.html#deployment-2",
-    "href": "index.html#deployment-2",
-    "title": "WebR: Why, What, How",
-    "section": "Deployment",
-    "text": "Deployment\nOr netlify:\nquarto publish netlify ./"
-  },
-  {
-    "objectID": "index.html#deployment-3",
-    "href": "index.html#deployment-3",
-    "title": "WebR: Why, What, How",
-    "section": "Deployment",
-    "text": "Deployment\nOr Github Actions:"
-  },
-  {
-    "objectID": "index.html#what-about-shiny",
-    "href": "index.html#what-about-shiny",
-    "title": "WebR: Why, What, How",
-    "section": "What about Shiny?",
-    "text": "What about Shiny?\nShinylive"
-  },
-  {
-    "objectID": "index.html#security",
-    "href": "index.html#security",
-    "title": "WebR: Why, What, How",
-    "section": "Security",
-    "text": "Security"
-  },
-  {
-    "objectID": "index.html#resources",
-    "href": "index.html#resources",
-    "title": "WebR: Why, What, How",
-    "section": "Resources",
-    "text": "Resources\n\nWebR Filesystem (Bob Rudis)\nTeaching with WebR - Nicola Rennie\nBob Rudis’ WebR Talk - much more about the indepth details of WebR\nQuarto/WebR extension - What I’ve been talking about\nWebR Developer Resources"
-  },
-  {
-    "objectID": "index.html#options",
-    "href": "index.html#options",
-    "title": "WebR: Why, What, How",
-    "section": "Options",
-    "text": "Options\n\nData packages\nServe data at a URL\n\nURL needs to be https://\ndownload.file()"
-  },
-  {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
-    "title": "WebR: Why, What, How",
-    "section": "",
-    "text": "Serve data from website folder"
+    "section": "Options to get data in",
+    "text": "Options to get data in\n\nData packages\nServe data at a URL\n\nURL needs to be https://\ndownload.file()"
   },
   {
     "objectID": "index.html#getting-data-in-from-a-url",
@@ -210,69 +168,6 @@
     "text": "Loading data in the filesystem\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "index.html#webr-worker",
-    "href": "index.html#webr-worker",
-    "title": "WebR: Why, What, How",
-    "section": "WebR Worker",
-    "text": "WebR Worker\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser"
-  },
-  {
-    "objectID": "index.html#first-create-a-project",
-    "href": "index.html#first-create-a-project",
-    "title": "WebR: Why, What, How",
-    "section": "First, Create a Project",
-    "text": "First, Create a Project\nFile &gt;&gt; New Project &gt;&gt; New Folder &gt;&gt; Quarto Website\n├── _quarto.yml\n├── _site\n├── about.qmd\n├── index.qmd\n├── styles.css\n└── webr-demo.Rproj"
-  },
-  {
-    "objectID": "index.html#recommended-for-users-quartowebr-documentation",
-    "href": "index.html#recommended-for-users-quartowebr-documentation",
-    "title": "WebR: Why, What, How",
-    "section": "Recommended for Users: Quarto/WebR documentation",
-    "text": "Recommended for Users: Quarto/WebR documentation\n\nBy James Balamuta and company\nQuarto WebR documentation\nQuarto/WebR extension\nHandles the communication between JS and WebR\nDon’t worry!"
-  },
-  {
-    "objectID": "index.html#options-to-get-data-in",
-    "href": "index.html#options-to-get-data-in",
-    "title": "WebR: Why, What, How",
-    "section": "Options to get data in",
-    "text": "Options to get data in\n\nData packages\nServe data at a URL\n\nURL needs to be https://\ndownload.file()"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "WebR: Why, What, How",
-    "section": "",
-    "text": "What?\nWhy?\nHow?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html#this-is-a-huge-accomplishment",
-    "href": "index.html#this-is-a-huge-accomplishment",
-    "title": "WebR: Why, What, How",
-    "section": "This is a huge accomplishment",
-    "text": "This is a huge accomplishment\n Source: Bob Rudis’ WebR Talk"
-  },
-  {
-    "objectID": "index.html#where-to-read-about-webr",
-    "href": "index.html#where-to-read-about-webr",
-    "title": "WebR: Why, What, How",
-    "section": "Where to read about WebR?",
-    "text": "Where to read about WebR?\nWebR documentation\n\nVery technical\nSpecifies how to get JS to interact with WebR in a web page\nAsynchronous evaluation\nMade for developers"
-  },
-  {
-    "objectID": "index.html#adding-layers",
-    "href": "index.html#adding-layers",
-    "title": "WebR: Why, What, How",
-    "section": "Adding Layers",
-    "text": "Adding Layers\nAdd another layer to the below plot by appending a geom_point(aes(color=species)) to it.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
     "objectID": "index.html#rwasmfile_packager",
     "href": "index.html#rwasmfile_packager",
     "title": "WebR: Why, What, How",
@@ -280,10 +175,45 @@
     "text": "rwasm::file_packager()\n\nLets you package a folder into a filesystem\nStill needs to be hosted somewhere"
   },
   {
+    "objectID": "index.html#deployment",
+    "href": "index.html#deployment",
+    "title": "WebR: Why, What, How",
+    "section": "Deployment",
+    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nDo not need a Shiny server, just something that serves HTML\nBrowser needs internet access to download packages\nAll computations are done in the browser"
+  },
+  {
+    "objectID": "index.html#deployment-1",
+    "href": "index.html#deployment-1",
+    "title": "WebR: Why, What, How",
+    "section": "Deployment",
+    "text": "Deployment\n\nCan use github pages:\nquarto publish gh-pages ./\nNetlify\nquarto publish netlify ./"
+  },
+  {
+    "objectID": "index.html#what-about-shiny",
+    "href": "index.html#what-about-shiny",
+    "title": "WebR: Why, What, How",
+    "section": "What about Shiny?",
+    "text": "What about Shiny?\nShinylive"
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "WebR: Why, What, How",
+    "section": "Resources",
+    "text": "Resources\n\nWebR Filesystem (Bob Rudis)\nTeaching with WebR - Nicola Rennie\nBob Rudis’ WebR Talk - much more about the indepth details of WebR\nQuarto/WebR extension - What I’ve been talking about\nWebR Developer Resources"
+  },
+  {
     "objectID": "index.html#keep-in-touch",
     "href": "index.html#keep-in-touch",
     "title": "WebR: Why, What, How",
     "section": "Keep in Touch",
     "text": "Keep in Touch\n\nhttps://elk.vmst.io/vmst.io/@tladeras\ntedladeras at gmail\nhttps://laderast.github.io\n\n\n\n\nhttps://laderast.github.io/webr-demo"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
