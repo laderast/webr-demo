@@ -1,6 +1,6 @@
 ---
 title: "WebR: Why, What, How"
-subtitle: "PDX-R Meetup"
+subtitle: "Fred Hutch User Group"
 date: 5/15/2024
 author: Ted Laderas
 engine: knitr
@@ -32,6 +32,9 @@ library(dplyr)
 library(ggplot2)
 library(palmerpenguins)
 ```
+
+# Follow along!
+## Code Examples you can try
 
 ## What is WebR?
 
