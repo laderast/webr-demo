@@ -39,7 +39,7 @@
     "href": "index.html#webr-worker",
     "title": "WebR: Why, What, How",
     "section": "WebR Worker",
-    "text": "WebR Worker\n\n\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser\n\n\n\n\n\n\n\n%% fig-width: 4\n%% fig-height: 4\nflowchart LR\n    subgraph browser [web browser]\n        direction LR\n        A[Javascript] --requests--&gt; B[WebR Worker] \n        B --response--&gt; A \n    end\n    style browser fill:#fff"
+    "text": "WebR Worker\n\n\n\n\n\n\nflowchart LR\n    subgraph browser [web browser]\n        direction LR\n        A[Javascript] --requests--&gt; B[WebR Worker] \n        B --response--&gt; A \n    end\n    style browser fill:#fff\n\n\n\n\nFigure 1\n\n\n\n\n\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser"
   },
   {
     "objectID": "index.html#where-to-read-about-webr",
@@ -70,25 +70,25 @@
     "text": "Next, install Quarto Extension in Project\n\nIn the RStudio Terminal Window:\n\nquarto add coatless/quarto-webr\nThis folder will be installed in your project:\n├── _extensions\n│   └── coatless\n│       └── webr  ## Contains a lot of JavaScript"
   },
   {
-    "objectID": "index.html#quartowebr-setup-1",
-    "href": "index.html#quartowebr-setup-1",
+    "objectID": "index.html#quarto-frontmatter",
+    "href": "index.html#quarto-frontmatter",
     "title": "WebR: Why, What, How",
-    "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\n\n\nStart like usual\nSpecify engine: knitr"
+    "section": "Quarto Frontmatter",
+    "text": "Quarto Frontmatter\n\n---\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\n---\n\n\nStart like usual\nSpecify engine: knitr"
   },
   {
-    "objectID": "index.html#quartowebr-setup-2",
-    "href": "index.html#quartowebr-setup-2",
+    "objectID": "index.html#quarto-frontmatter-1",
+    "href": "index.html#quarto-frontmatter-1",
     "title": "WebR: Why, What, How",
-    "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                     \n  - webr                     \n\n\nNeed to use filters with - webr option"
+    "section": "Quarto Frontmatter",
+    "text": "Quarto Frontmatter\n\n---\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                     \n  - webr                    \n--- \n\n\nNeed to use filters with - webr option"
   },
   {
-    "objectID": "index.html#quartowebr-setup-3",
-    "href": "index.html#quartowebr-setup-3",
+    "objectID": "index.html#quarto-frontmatter-2",
+    "href": "index.html#quarto-frontmatter-2",
     "title": "WebR: Why, What, How",
-    "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                         \n  - webr                         \nwebr:                            \n  packages: ['ggplot2', 'dplyr', 'palmerpenguins']\n\n\nwebr is where you set options:\n\npackages: to install\nbase-url: to change WebR repository\ncell-options: to set default code window options"
+    "section": "Quarto Frontmatter",
+    "text": "Quarto Frontmatter\n\n---\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                         \n  - webr                         \nwebr:                            \n  packages: ['ggplot2', 'dplyr', 'palmerpenguins']\n---\n\n\nwebr is where you set options:\n\npackages: to install\nbase-url: to change WebR repository\ncell-options: to set default code window options"
   },
   {
     "objectID": "index.html#a-note-about-packages",
@@ -117,27 +117,6 @@
     "title": "WebR: Why, What, How",
     "section": "Quarto/WebR Block",
     "text": "Quarto/WebR Block\n```{webr-r}\nlibrary(palmerpenguins)\ntable(penguins$island)\n```\nThis becomes:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "index.html#context-setup",
-    "href": "index.html#context-setup",
-    "title": "WebR: Why, What, How",
-    "section": "context: setup",
-    "text": "context: setup\ncontext: setup - Pre-load data, load packages, for use globally\n```{webr-r}\n#| context: setup\n\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(penguins)\n```"
-  },
-  {
-    "objectID": "index.html#context-output",
-    "href": "index.html#context-output",
-    "title": "WebR: Why, What, How",
-    "section": "context: output",
-    "text": "context: output\nShow only output, not execution cell\n```{webr-r}\n#| context: output\n\ntable(penguins$species)\n```"
-  },
-  {
-    "objectID": "index.html#context-output-1",
-    "href": "index.html#context-output-1",
-    "title": "WebR: Why, What, How",
-    "section": "context: output",
-    "text": "context: output\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "index.html#adding-layers",
@@ -180,6 +159,27 @@
     "title": "WebR: Why, What, How",
     "section": "rwasm::file_packager()",
     "text": "rwasm::file_packager()\n\nLets you package a folder into a filesystem\nStill needs to be hosted somewhere"
+  },
+  {
+    "objectID": "index.html#context-setup",
+    "href": "index.html#context-setup",
+    "title": "WebR: Why, What, How",
+    "section": "context: setup",
+    "text": "context: setup\ncontext: setup - Pre-load data, load packages, for use globally\n```{webr-r}\n#| context: setup\n\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(penguins)\n```"
+  },
+  {
+    "objectID": "index.html#context-output",
+    "href": "index.html#context-output",
+    "title": "WebR: Why, What, How",
+    "section": "context: output",
+    "text": "context: output\nShow only output, not execution cell\n```{webr-r}\n#| context: output\n\ntable(penguins$species)\n```"
+  },
+  {
+    "objectID": "index.html#context-output-1",
+    "href": "index.html#context-output-1",
+    "title": "WebR: Why, What, How",
+    "section": "context: output",
+    "text": "context: output\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "index.html#deployment",
