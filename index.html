@@ -386,6 +386,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/editor/editor.main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
@@ -595,7 +598,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"id":1,"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)","options":{"editor-font-scale":1,"editor-max-height":"","out-width":"700px","classes":"","output":"true","context":"setup","fig-width":7,"fig-height":5,"warning":"true","message":"true","autorun":"true","label":"unnamed-chunk-1","comment":"","dpi":72,"editor-quick-suggestions":"false","out-height":"","results":"markup","read-only":"false","fig-cap":""}},{"id":2,"code":"ggplot(diamonds, aes(x=cut, y=carat, \n                     fill=cut)) +\n  geom_boxplot()","options":{"editor-font-scale":1,"editor-max-height":"","out-width":"700px","classes":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"warning":"true","message":"true","autorun":"false","label":"unnamed-chunk-2","comment":"","dpi":72,"editor-quick-suggestions":"false","out-height":"","results":"markup","read-only":"false","fig-cap":""}},{"id":3,"code":"library(palmerpenguins)\ntable(penguins$island)","options":{"editor-font-scale":1,"editor-max-height":"","out-width":"700px","classes":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"warning":"true","message":"true","autorun":"false","label":"unnamed-chunk-3","comment":"","dpi":72,"editor-quick-suggestions":"false","out-height":"","results":"markup","read-only":"false","fig-cap":""}},{"id":4,"code":"\ntable(penguins$species)","options":{"editor-font-scale":1,"editor-max-height":"","out-width":"700px","classes":"","output":"true","context":"output","fig-width":7,"fig-height":5,"warning":"true","message":"true","autorun":"true","label":"unnamed-chunk-4","comment":"","dpi":72,"editor-quick-suggestions":"false","out-height":"","results":"markup","read-only":"false","fig-cap":""}},{"id":5,"code":"ggplot(penguins) +\n  aes(x=bill_length_mm, y=bill_depth_mm) +\n  geom_hex() + ---------","options":{"editor-font-scale":1,"editor-max-height":"","out-width":"700px","classes":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"warning":"false","message":"true","autorun":"false","label":"unnamed-chunk-5","comment":"","dpi":72,"editor-quick-suggestions":"false","out-height":"","results":"markup","read-only":"false","fig-cap":""}},{"id":6,"code":"list.files()\nurl <- 'https://laderast.github.io/webr-demo/data/penguins.csv'\ndownload.file(url, 'penguins.csv')\nlist.files()","options":{"editor-font-scale":1,"editor-max-height":"","out-width":"700px","classes":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"warning":"true","message":"true","autorun":"false","label":"unnamed-chunk-6","comment":"","dpi":72,"editor-quick-suggestions":"false","out-height":"","results":"markup","read-only":"false","fig-cap":""}},{"id":7,"code":"penguins2 <- read.csv(\"penguins.csv\")\npenguins2 |>\n  count(species)","options":{"editor-font-scale":1,"editor-max-height":"","out-width":"700px","classes":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"warning":"true","message":"true","autorun":"false","label":"unnamed-chunk-7","comment":"","dpi":72,"editor-quick-suggestions":"false","out-height":"","results":"markup","read-only":"false","fig-cap":""}}];
+  globalThis.qwebrCellDetails = [{"options":{"message":"true","read-only":"false","classes":"","fig-width":7,"warning":"true","fig-height":5,"fig-cap":"","out-height":"","dpi":72,"out-width":"700px","editor-max-height":"","editor-quick-suggestions":"false","comment":"","autorun":"true","results":"markup","output":"true","editor-font-scale":1,"context":"setup","label":"unnamed-chunk-1"},"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)","id":1},{"options":{"message":"true","read-only":"false","classes":"","fig-width":7,"warning":"true","fig-height":5,"fig-cap":"","out-height":"","dpi":72,"out-width":"700px","editor-max-height":"","editor-quick-suggestions":"false","comment":"","autorun":"false","results":"markup","output":"true","editor-font-scale":1,"context":"interactive","label":"unnamed-chunk-2"},"code":"ggplot(diamonds, aes(x=cut, y=carat, \n                     fill=cut)) +\n  geom_boxplot()","id":2},{"options":{"message":"true","read-only":"false","classes":"","fig-width":7,"warning":"true","fig-height":5,"fig-cap":"","out-height":"","dpi":72,"out-width":"700px","editor-max-height":"","editor-quick-suggestions":"false","comment":"","autorun":"false","results":"markup","output":"true","editor-font-scale":1,"context":"interactive","label":"unnamed-chunk-3"},"code":"library(palmerpenguins)\ntable(penguins$island)","id":3},{"options":{"message":"true","read-only":"false","classes":"","fig-width":7,"warning":"true","fig-height":5,"fig-cap":"","out-height":"","dpi":72,"out-width":"700px","editor-max-height":"","editor-quick-suggestions":"false","comment":"","autorun":"true","results":"markup","output":"true","editor-font-scale":1,"context":"output","label":"unnamed-chunk-4"},"code":"\ntable(penguins$species)","id":4},{"options":{"message":"true","read-only":"false","classes":"","fig-width":7,"warning":"false","fig-height":5,"fig-cap":"","out-height":"","dpi":72,"out-width":"700px","editor-max-height":"","editor-quick-suggestions":"false","comment":"","autorun":"false","results":"markup","output":"true","editor-font-scale":1,"context":"interactive","label":"unnamed-chunk-5"},"code":"ggplot(penguins) +\n  aes(x=bill_length_mm, y=bill_depth_mm) +\n  geom_hex() + ---------","id":5},{"options":{"message":"true","read-only":"false","classes":"","fig-width":7,"warning":"true","fig-height":5,"fig-cap":"","out-height":"","dpi":72,"out-width":"700px","editor-max-height":"","editor-quick-suggestions":"false","comment":"","autorun":"false","results":"markup","output":"true","editor-font-scale":1,"context":"interactive","label":"unnamed-chunk-6"},"code":"list.files()\nurl <- 'https://laderast.github.io/webr-demo/data/penguins.csv'\ndownload.file(url, 'penguins.csv')\nlist.files()","id":6},{"options":{"message":"true","read-only":"false","classes":"","fig-width":7,"warning":"true","fig-height":5,"fig-cap":"","out-height":"","dpi":72,"out-width":"700px","editor-max-height":"","editor-quick-suggestions":"false","comment":"","autorun":"false","results":"markup","output":"true","editor-font-scale":1,"context":"interactive","label":"unnamed-chunk-7"},"code":"penguins2 <- read.csv(\"penguins.csv\")\npenguins2 |>\n  count(species)","id":7}];
 
   </script>
   <script type="module">
@@ -1695,9 +1698,6 @@ Ted Laderas
 <h1>Follow along!</h1>
 
 </section>
-<section id="code-examples-you-can-try" class="slide level2">
-<h2>Code Examples you can try</h2>
-</section>
 <section id="what-is-webr" class="slide level2">
 <h2>What is WebR?</h2>
 <div id="qwebr-insertion-location-2"></div>
@@ -1726,13 +1726,36 @@ Ted Laderas
 <h2>This is a huge accomplishment</h2>
 <p><img data-src="111-002.png" style="width:60.0%"> <a href="https://rud.is/w/2023-nyr-webr/#/now">Source: Bob Rudis’ WebR Talk</a></p>
 </section>
-<section id="webr-worker" class="slide level2">
+<section id="webr-worker" class="slide level2" data-background-color="white">
 <h2>WebR Worker</h2>
+<div class="columns">
+<div class="column">
 <ul>
 <li class="fragment">WebR launches a <strong>worker process</strong> in browser</li>
 <li class="fragment">Uses JavaScript to communicate between web page and worker</li>
 <li class="fragment">Everything is run in the browser</li>
 </ul>
+</div><div class="column">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    subgraph browser [web browser]
+        direction LR
+        A[Javascript] --requests--&gt; B[WebR Worker] 
+        B --response--&gt; A 
+    end
+    style browser fill:#fff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="where-to-read-about-webr" class="slide level2">
 <h2>Where to read about WebR?</h2>

@@ -7,13 +7,6 @@
     "text": "This Presentation\nAfter this presentation, you will be able to\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "index.html#code-examples-you-can-try",
-    "href": "index.html#code-examples-you-can-try",
-    "title": "WebR: Why, What, How",
-    "section": "Code Examples you can try",
-    "text": "Code Examples you can try"
-  },
-  {
     "objectID": "index.html#what-is-webr",
     "href": "index.html#what-is-webr",
     "title": "WebR: Why, What, How",
@@ -46,7 +39,7 @@
     "href": "index.html#webr-worker",
     "title": "WebR: Why, What, How",
     "section": "WebR Worker",
-    "text": "WebR Worker\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser"
+    "text": "WebR Worker\n\n\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser\n\n\n\n\n\n\n\nflowchart LR\n    subgraph browser [web browser]\n        direction LR\n        A[Javascript] --requests--&gt; B[WebR Worker] \n        B --response--&gt; A \n    end\n    style browser fill:#fff"
   },
   {
     "objectID": "index.html#where-to-read-about-webr",
