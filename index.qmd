@@ -63,16 +63,11 @@ ggplot(diamonds, aes(x=cut, y=carat,
 
 ## WebR Worker {background-color="white"}
 
-::::{.columns}
-:::{.column}
-- WebR launches a **worker process** in browser
-- Uses JavaScript to communicate between web page and worker
-- Everything is run in the browser
-:::
-:::{.column}
 ```{mermaid}
-%% fig-width: 4
-%% fig-height: 4
+%%| label: fig-figure
+%%| fig-responsive: false
+%%| fig-align: center
+%%| fig-width: 8
 flowchart LR
     subgraph browser [web browser]
         direction LR
@@ -81,8 +76,10 @@ flowchart LR
     end
     style browser fill:#fff
 ```
-:::
-::::
+
+- WebR launches a **worker process** in browser
+- Uses JavaScript to communicate between web page and worker
+- Everything is run in the browser
 
 ## Where to read about WebR?
 
@@ -133,34 +130,39 @@ This folder will be installed in your project:
 
 # Quarto/WebR Setup
 
-## Quarto/WebR Setup {auto-animate="true"}
+## Quarto Frontmatter {auto-animate="true"}
 ```{markdown}
 #| echo: true
+---
 title: "My WebR Demo"
 format: html
 engine: knitr
+---
 ```
 
 - Start like usual 
 - Specify `engine: knitr`
 
-## Quarto/WebR Setup {auto-animate="true"}
+## Quarto Frontmatter {auto-animate="true"}
 ```{markdown}
 #| echo: true
-#| code-line-numbers: "4-5"
+#| code-line-numbers: "5-6"
+---
 title: "My WebR Demo"
 format: html
 engine: knitr
 filters:                     
-  - webr                     
+  - webr                    
+--- 
 ```
 - Need to use `filters` with `- webr` option
 
 
-## Quarto/WebR Setup {auto-animate="true"}
+## Quarto Frontmatter {auto-animate="true"}
 ```{markdown}
 #| echo: true
-#| code-line-numbers: "6-7"
+#| code-line-numbers: "7-8"
+---
 title: "My WebR Demo"
 format: html
 engine: knitr
@@ -168,6 +170,7 @@ filters:
   - webr                         
 webr:                            
   packages: ['ggplot2', 'dplyr', 'palmerpenguins']
+---
 ```
 
 - `webr` is where you set options:
@@ -214,6 +217,62 @@ library(palmerpenguins)
 table(penguins$island)
 ```
 
+# Education Example
+
+## Adding Layers
+
+Add another layer to the below plot by appending a `geom_point(aes(color=species))` to it. 
+
+```{webr-r}
+#| warning: false
+ggplot(penguins) +
+  aes(x=bill_length_mm, y=bill_depth_mm) +
+  geom_hex() + ---------
+```
+
+# WebR Filesystem
+
+## What about files?
+
+- There is a filesystem that is created
+  - emscripten filesystem
+- Not super easy to get stuff in
+- Distinct from your project
+  - can't see anything in your directory
+
+## Options to get data in
+
+- Data packages
+- Serve data at a URL
+  - URL needs to be `https://`
+  - `download.file()`
+
+## Getting data in from a URL
+
+For teaching, put in a `context: setup` chunk:
+
+```{webr-r}
+list.files()
+url <- 'https://laderast.github.io/webr-demo/data/penguins.csv'
+download.file(url, 'penguins.csv')
+list.files()
+```
+
+## Loading data in the filesystem
+
+```{webr-r}
+penguins2 <- read.csv("penguins.csv")
+penguins2 |>
+  count(species)
+```
+
+## `rwasm::file_packager()`
+
+- Lets you package a folder into a filesystem
+- Still needs to be hosted somewhere
+
+# Code Block Options
+
 ## `context: setup`
 
 [`context: setup`](https://quarto-webr.thecoatlessprofessor.com/qwebr-internal-cell.html#hidden-loading-of-a-dataset) - Pre-load data, load packages, for use globally
@@ -244,58 +303,7 @@ table(penguins$species)
 table(penguins$species)
 ```
 
-# Education Example
-
-## Adding Layers
-
-Add another layer to the below plot by appending a `geom_point(aes(color=species))` to it. 
-
-```{webr-r}
-#| warning: false
-ggplot(penguins) +
-  aes(x=bill_length_mm, y=bill_depth_mm) +
-  geom_hex() + ---------
-```
-
-## What about files?
-
-- There is a filesystem that is created
-  - emscripten filesystem
-- Not super easy to get stuff in
-- Distinct from your project
-  - can't see anything in your directory
-
-## Options to get data in
-
-- Data packages
-- Serve data at a URL
-  - URL needs to be `https://`
-  - `download.file()`
-- 
-
-## Getting data in from a URL
-
-For teaching, put in a `context: setup` chunk:
-
-```{webr-r}
-list.files()
-url <- 'https://laderast.github.io/webr-demo/data/penguins.csv'
-download.file(url, 'penguins.csv')
-list.files()
-```
-
-## Loading data in the filesystem
-
-```{webr-r}
-penguins2 <- read.csv("penguins.csv")
-penguins2 |>
-  count(species)
-```
-
-## `rwasm::file_packager()`
-
-- Lets you package a folder into a filesystem
-- Still needs to be hosted somewhere
+# Deploy your HTML
 
 ## Deployment
 
