@@ -345,6 +345,6 @@ table(penguins$species)
 
 ## Keep in Touch
 
-- <https://elk.vmst.io/vmst.io/@tladeras>
-- tedladeras at gmail
-- <https://laderast.github.io>
+- Mastodon: <https://vmst.io/@tladeras>
+- Email: tedladeras at gmail
+- Web: <https://laderast.github.io>
