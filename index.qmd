@@ -159,15 +159,18 @@ webr:
 
 ## A Note about Packages
 
-- Can also install via `webr::install()`
 - Packages need to be compiled for WebAssembly
   - [`{rwasm}` package](https://github.com/r-wasm/rwasm)
   - Need to solve dependencies
+- [Using R Packages in WebR](https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html)
+  - Can install in realtime or using the `webr::install()` option
+
+## Not all dependencies
+
 - [WebR Compiled Packages](https://repo.r-wasm.org/)
   - Default repository for packages (19532+ compiled, but not everything)
-- [Using R Packages in WebR](https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html)
-  - Can install in realtime or using the `webr:packages` option
-
+- Some packages don't have all dependencies compiled
+  - Example: Bioconductor (Biobase) is not compiled
 
 # Add Your Code Blocks
 
