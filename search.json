@@ -4,7 +4,14 @@
     "href": "index.html#this-presentation",
     "title": "WebR: Why, What, How",
     "section": "This Presentation",
-    "text": "This Presentation\n\nWhat?\nWhy?\nHow?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "This Presentation\nAfter this presentation, you will be able to\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#code-examples-you-can-try",
+    "href": "index.html#code-examples-you-can-try",
+    "title": "WebR: Why, What, How",
+    "section": "Code Examples you can try",
+    "text": "Code Examples you can try"
   },
   {
     "objectID": "index.html#what-is-webr",
@@ -74,28 +81,35 @@
     "href": "index.html#quartowebr-setup-1",
     "title": "WebR: Why, What, How",
     "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\n\n\nStart like usual\nspecify engine: knitr"
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\n\n\nStart like usual\nSpecify engine: knitr"
   },
   {
     "objectID": "index.html#quartowebr-setup-2",
     "href": "index.html#quartowebr-setup-2",
     "title": "WebR: Why, What, How",
     "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                     \n  - webr                     \n\nNeed to use filters with - webr option"
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                     \n  - webr                     \n\n\nNeed to use filters with - webr option"
   },
   {
     "objectID": "index.html#quartowebr-setup-3",
     "href": "index.html#quartowebr-setup-3",
     "title": "WebR: Why, What, How",
     "section": "Quarto/WebR Setup",
-    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                         \n  - webr                         \nwebr:                            \n  packages: ['ggplot2', 'dplyr', 'palmerpenguins']\n\nwebr is where you set options, including which packages to install"
+    "text": "Quarto/WebR Setup\n\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                         \n  - webr                         \nwebr:                            \n  packages: ['ggplot2', 'dplyr', 'palmerpenguins']\n\n\nwebr is where you set options:\n\npackages: to install\nbase-url: to change WebR repository\ncell-options: to set default code window options"
   },
   {
     "objectID": "index.html#a-note-about-packages",
     "href": "index.html#a-note-about-packages",
     "title": "WebR: Why, What, How",
     "section": "A Note about Packages",
-    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\n\n{rwasm} package\nNeed to solve dependencies\n\nWebR Compiled Packages\n\nDefault repository for packages (16000+ compiled, but not everything)\n\nUsing R Packages in WebR\n\nCan install in realtime or using the webr:packages option"
+    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\n\n{rwasm} package\nNeed to solve dependencies\n\nUsing R Packages in WebR\n\nCan install in realtime or using the webr::install() option"
+  },
+  {
+    "objectID": "index.html#not-all-dependencies",
+    "href": "index.html#not-all-dependencies",
+    "title": "WebR: Why, What, How",
+    "section": "Not all dependencies",
+    "text": "Not all dependencies\n\nWebR Compiled Packages\n\nDefault repository for packages (19532+ compiled, but not everything)\n\nSome packages don’t have all dependencies compiled\n\nExample: Bioconductor (Biobase) is not compiled"
   },
   {
     "objectID": "index.html#quartowebr-block",
