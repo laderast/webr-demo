@@ -20,19 +20,17 @@ webr:
 
 ## This Presentation
 
-- What?
-- Why?
-- How?
+After this presentation, you will be able to
+
+- **Articulate** *what* WebR is and how it lets your run in the browser
+- **Explain** *why* to use WebR in your educational work
+- **Utilize** WebR in your presentations and web pages (*how*)
 
 ```{webr-r}
 #| context: setup
 library(dplyr)
 library(ggplot2)
 library(palmerpenguins)
-#webr::mount(mountpoint = "/data",
-#  source = "./data",
-#  type = "NODEFS")
-#penguins = read.csv("/data/penguins.csv")
 ```
 
 ## What is WebR?
@@ -42,7 +40,6 @@ ggplot(diamonds, aes(x=cut, y=carat,
                      fill=cut)) +
   geom_boxplot()
 ```
-
 
 ## Why WebR?
 
@@ -59,7 +56,7 @@ ggplot(diamonds, aes(x=cut, y=carat,
 
 ## This is a huge accomplishment {background-color="black"}
 
-![](111-002.png){width="70%"}
+![](111-002.png){width="60%"}
 [Source: Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/#/now)
 
 ## WebR Worker
@@ -99,7 +96,6 @@ File >> New Project >> New Folder >> Quarto Website
 └── webr-demo.Rproj
 ```
 
-
 ## Next, install Quarto Extension in Project
 
 - In the RStudio Terminal Window:
@@ -125,8 +121,9 @@ title: "My WebR Demo"
 format: html
 engine: knitr
 ```
+
 - Start like usual 
-- specify `engine: knitr`
+- Specify `engine: knitr`
 
 ## Quarto/WebR Setup {auto-animate="true"}
 ```{markdown}
@@ -138,7 +135,7 @@ engine: knitr
 filters:                     
   - webr                     
 ```
-Need to use `filters` with `- webr` option
+- Need to use `filters` with `- webr` option
 
 
 ## Quarto/WebR Setup {auto-animate="true"}
@@ -153,17 +150,24 @@ filters:
 webr:                            
   packages: ['ggplot2', 'dplyr', 'palmerpenguins']
 ```
-`webr` is where you set options, including which packages to install
+
+- `webr` is where you set options:
+    - `packages:` to install
+    - `base-url:` to change WebR repository
+    - `cell-options:` to set default code window options
+
 
 ## A Note about Packages
 
+- Can also install via `webr::install()`
 - Packages need to be compiled for WebAssembly
   - [`{rwasm}` package](https://github.com/r-wasm/rwasm)
   - Need to solve dependencies
 - [WebR Compiled Packages](https://repo.r-wasm.org/)
-  - Default repository for packages (16000+ compiled, but not everything)
+  - Default repository for packages (19532+ compiled, but not everything)
 - [Using R Packages in WebR](https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html)
   - Can install in realtime or using the `webr:packages` option
+
 
 # Add Your Code Blocks
 
