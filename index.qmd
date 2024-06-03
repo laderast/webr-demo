@@ -71,6 +71,8 @@ ggplot(diamonds, aes(x=cut, y=carat,
 :::
 :::{.column}
 ```{mermaid}
+%% fig-width: 4
+%% fig-height: 4
 flowchart LR
     subgraph browser [web browser]
         direction LR
