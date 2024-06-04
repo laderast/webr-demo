@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html#this-presentation",
-    "href": "index.html#this-presentation",
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
     "title": "WebR: Why, What, How",
-    "section": "This Presentation",
-    "text": "This Presentation\nAfter this presentation, you will be able to\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter watching this presentation, you will be able to\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "index.html#what-is-webr",
@@ -18,14 +18,7 @@
     "href": "index.html#why-webr",
     "title": "WebR: Why, What, How",
     "section": "Why WebR?",
-    "text": "Why WebR?\n\nEducation\nInternal Websites\nShinylive (Shiny without Shiny Server)"
-  },
-  {
-    "objectID": "index.html#how-does-webr-work",
-    "href": "index.html#how-does-webr-work",
-    "title": "WebR: Why, What, How",
-    "section": "How does WebR work?",
-    "text": "How does WebR work?\n\nBrowsers include WebAssembly and JavaScript\nWebpages use Javascript to execute WebR scripts\nResults are returned within a &lt;div&gt;\n\nSpecial R canvas called HTML"
+    "text": "Why WebR?\n\nEducation\n\nWorks on phones!\n\nInternal Websites\n\nSharepoint\n\nShinylive (Shiny without Shiny Server)"
   },
   {
     "objectID": "index.html#this-is-a-huge-accomplishment",
@@ -40,6 +33,13 @@
     "title": "WebR: Why, What, How",
     "section": "WebR Worker",
     "text": "WebR Worker\n\n\n\n\n\n\nflowchart LR\n    subgraph browser [web browser]\n        direction LR\n        A[Javascript] --requests--&gt; B[WebR Worker] \n        B --response--&gt; A \n    end\n    style browser fill:#fff\n\n\n\n\nFigure 1\n\n\n\n\n\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser"
+  },
+  {
+    "objectID": "index.html#how-does-webr-work",
+    "href": "index.html#how-does-webr-work",
+    "title": "WebR: Why, What, How",
+    "section": "How does WebR work?",
+    "text": "How does WebR work?\n\nWebpages use Javascript to run R Scripts in Worker\nBrowsers include WebAssembly and JavaScript\nResults are returned within a &lt;div&gt;"
   },
   {
     "objectID": "index.html#where-to-read-about-webr",
