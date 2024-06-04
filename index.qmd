@@ -18,9 +18,9 @@ webr:
   
 ---
 
-## This Presentation
+## Learning Objectives
 
-After this presentation, you will be able to
+After watching this presentation, you will be able to
 
 - **Articulate** *what* WebR is and how it lets your run in the browser
 - **Explain** *why* to use WebR in your educational work
@@ -46,15 +46,10 @@ ggplot(diamonds, aes(x=cut, y=carat,
 ## Why WebR?
 
 - Education
-- Internal Websites 
+  - Works on phones!
+- Internal Websites
+  - Sharepoint
 - Shinylive (Shiny without Shiny Server)
-
-## How does WebR work?
-
-- Browsers include WebAssembly and JavaScript
-- Webpages use Javascript to execute WebR scripts
-- Results are returned within a `<div>`
-  - Special R canvas called HTML
 
 ## This is a huge accomplishment {background-color="black"}
 
@@ -80,6 +75,13 @@ flowchart LR
 - WebR launches a **worker process** in browser
 - Uses JavaScript to communicate between web page and worker
 - Everything is run in the browser
+
+## How does WebR work?
+
+- Webpages use Javascript to run R Scripts in Worker
+- Browsers include WebAssembly and JavaScript
+- Results are returned within a `<div>`
+
 
 ## Where to read about WebR?
 
@@ -311,7 +313,6 @@ table(penguins$species)
 - Do not need a Shiny server, just something that serves HTML 
 - Browser needs internet access to download packages
 - All computations are done in the browser
-
 
 ## Deployment
 
