@@ -8,6 +8,7 @@ filters:
   - webr
 format:
   revealjs:
+    theme: simple
     auto-stretch: false
     incremental: true
     footer: https://laderast.github.io/webr-demo
@@ -58,19 +59,7 @@ ggplot(diamonds, aes(x=cut, y=carat,
 
 ## WebR Worker {background-color="white"}
 
-```{mermaid}
-%%| label: fig-figure
-%%| fig-responsive: false
-%%| fig-align: center
-%%| fig-width: 8
-flowchart LR
-    subgraph browser [web browser]
-        direction LR
-        A[Javascript] --requests--> B[WebR Worker] 
-        B --response--> A 
-    end
-    style browser fill:#fff
-```
+![](worker.png)
 
 - WebR launches a **worker process** in browser
 - Uses JavaScript to communicate between web page and worker
@@ -116,6 +105,19 @@ File >> New Project >> New Folder >> Quarto Website
 
 ## Next, install Quarto Extension in Project
 
+::: {.nonincremental}
+
+- In the RStudio Terminal Window:
+
+```bash
+quarto add coatless/quarto-webr
+```
+:::
+
+## Next, install Quarto Extension in Project {auto-animate="true"}
+
+::: {.nonincremental}
+
 - In the RStudio Terminal Window:
 
 ```bash
@@ -129,6 +131,7 @@ This folder will be installed in your project:
 │   └── coatless
 │       └── webr  ## Contains a lot of JavaScript
 ```
+:::
 
 # Quarto/WebR Setup
 
@@ -180,16 +183,15 @@ webr:
     - `base-url:` to change WebR repository
     - `cell-options:` to set default code window options
 
-
 ## A Note about Packages
 
 - Packages need to be compiled for WebAssembly
   - [`{rwasm}` package](https://github.com/r-wasm/rwasm)
-  - Need to solve dependencies
+  - Need to solve dependencies (for FORTRAN, C++, code)
 - [Using R Packages in WebR](https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html)
-  - Can install in realtime or using the `webr::install()` option
+  - Can install in setup chunk or using the `webr::install()` option
 
-## Not all dependencies
+## Not all dependencies are available
 
 - [WebR Compiled Packages](https://repo.r-wasm.org/)
   - Default repository for packages (19532+ compiled, but not everything)
@@ -218,6 +220,12 @@ This becomes:
 library(palmerpenguins)
 table(penguins$island)
 ```
+
+## Keep in Mind
+
+- Every webpage is a single WebR Session
+- Data objects persist between code windows
+- Be careful with incremental lessons with multiple code windows
 
 # Education Example
 
@@ -310,9 +318,8 @@ table(penguins$species)
 ## Deployment
 
 - You will need a web server to deploy your WebR page
-- Do not need a Shiny server, just something that serves HTML 
+- Serve HTML, no shiny server needed 
 - Browser needs internet access to download packages
-- All computations are done in the browser
 
 ## Deployment
 

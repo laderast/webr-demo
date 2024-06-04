@@ -1,0 +1,71 @@
+---
+title: "WebR: Why, What, How"
+subtitle: "Fred Hutch User Group"
+date: 5/15/2024
+author: Ted Laderas
+engine: knitr
+filters: 
+  - webr
+format:
+  html:
+    auto-stretch: false
+    incremental: true
+    footer: https://laderast.github.io/webr-demo
+    resources:
+      - data/*
+webr:
+  packages: ['ggplot2', 'dplyr', 'palmerpenguins', 'hexbin']
+  
+---
+
+## Learning Objectives
+
+After watching this presentation, you will be able to
+
+- **Articulate** *what* WebR is and how it lets your run in the browser
+- **Explain** *why* to use WebR in your educational work
+- **Utilize** WebR in your presentations and web pages (*how*)
+
+```{webr-r}
+#| context: setup
+library(dplyr)
+library(ggplot2)
+library(palmerpenguins)
+```
+
+# Follow along!
+
+## What is WebR?
+
+```{webr-r}
+ggplot(diamonds, aes(x=cut, y=carat, 
+                     fill=cut)) +
+  geom_boxplot()
+```
+
+## Why WebR?
+
+- Education
+  - Works on phones!
+- Internal Websites
+  - Sharepoint
+- Shinylive (Shiny without Shiny Server)
+
+## This is a huge accomplishment {background-color="black"}
+
+![](111-002.png){width="60%"}
+[Source: Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/#/now)
+
+## WebR Worker {background-color="white"}
+
+```{mermaid}
+%%| fig-align: center
+%%| fig-width: 6.5
+flowchart LR
+    subgraph browser [web browser]
+        direction LR
+        A[Javascript] --requests--> B[WebR Worker] 
+        B --response--> A 
+    end
+    style browser fill:#fff
+```
