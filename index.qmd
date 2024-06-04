@@ -52,6 +52,11 @@ ggplot(diamonds, aes(x=cut, y=carat,
   - Sharepoint
 - Shinylive (Shiny without Shiny Server)
 
+## How does WebR work?
+
+- R has been compiled to WebAssembly
+- Browsers include WebAssembly and JavaScript
+
 ## This is a huge accomplishment {background-color="black"}
 
 ![](111-002.png){width="60%"}
@@ -65,10 +70,9 @@ ggplot(diamonds, aes(x=cut, y=carat,
 - Uses JavaScript to communicate between web page and worker
 - Everything is run in the browser
 
-## How does WebR work?
+## Communication
 
-- Webpages use Javascript to run R Scripts in Worker
-- Browsers include WebAssembly and JavaScript
+- Webpages use Javascript to communicate with WebR Worker
 - Results are returned within a `<div>`
 
 
@@ -91,7 +95,8 @@ ggplot(diamonds, aes(x=cut, y=carat,
 
 # Getting started with Quarto/WebR
 
-## First, Create a Project
+## First, Create a Project in RStudio
+
 File >> New Project >> New Folder >> Quarto Website
 
 ```bash
@@ -226,6 +231,18 @@ table(penguins$island)
 - Every webpage is a single WebR Session
 - Data objects persist between code windows
 - Be careful with incremental lessons with multiple code windows
+- Design consideration: what goes together in a single webpage?
+
+## Persistence of Penguins
+
+```{webr-r}
+penguins_small <- 
+    penguins |> select(species, bill_length_mm)
+```
+
+```{webr-r}
+head(penguins_small)
+```
 
 # Education Example
 
