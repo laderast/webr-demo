@@ -595,7 +595,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)","id":1,"options":{"fig-width":7,"message":"true","comment":"","label":"unnamed-chunk-1","classes":"","out-height":"","dpi":72,"editor-font-scale":1,"context":"setup","results":"markup","out-width":"700px","autorun":"true","warning":"true","fig-height":5,"output":"true","read-only":"false","editor-max-height":"","editor-quick-suggestions":"false","fig-cap":""}},{"code":"ggplot(diamonds, aes(x=cut, y=carat, \n                     fill=cut)) +\n  geom_boxplot()","id":2,"options":{"fig-width":7,"message":"true","comment":"","label":"unnamed-chunk-2","classes":"","out-height":"","dpi":72,"editor-font-scale":1,"context":"interactive","results":"markup","out-width":"700px","autorun":"false","warning":"true","fig-height":5,"output":"true","read-only":"false","editor-max-height":"","editor-quick-suggestions":"false","fig-cap":""}},{"code":"library(palmerpenguins)\ntable(penguins$island)","id":3,"options":{"fig-width":7,"message":"true","comment":"","label":"unnamed-chunk-3","classes":"","out-height":"","dpi":72,"editor-font-scale":1,"context":"interactive","results":"markup","out-width":"700px","autorun":"false","warning":"true","fig-height":5,"output":"true","read-only":"false","editor-max-height":"","editor-quick-suggestions":"false","fig-cap":""}},{"code":"ggplot(penguins) +\n  aes(x=bill_length_mm, y=bill_depth_mm) +\n  geom_hex() + ---------","id":4,"options":{"fig-width":7,"message":"true","comment":"","label":"unnamed-chunk-4","classes":"","out-height":"","dpi":72,"editor-font-scale":1,"context":"interactive","results":"markup","out-width":"700px","autorun":"false","warning":"false","fig-height":5,"output":"true","read-only":"false","editor-max-height":"","editor-quick-suggestions":"false","fig-cap":""}},{"code":"list.files()\nurl <- 'https://laderast.github.io/webr-demo/data/penguins.csv'\ndownload.file(url, 'penguins.csv')\nlist.files()","id":5,"options":{"fig-width":7,"message":"true","comment":"","label":"unnamed-chunk-5","classes":"","out-height":"","dpi":72,"editor-font-scale":1,"context":"interactive","results":"markup","out-width":"700px","autorun":"false","warning":"true","fig-height":5,"output":"true","read-only":"false","editor-max-height":"","editor-quick-suggestions":"false","fig-cap":""}},{"code":"penguins2 <- read.csv(\"penguins.csv\")\npenguins2 |>\n  count(species)","id":6,"options":{"fig-width":7,"message":"true","comment":"","label":"unnamed-chunk-6","classes":"","out-height":"","dpi":72,"editor-font-scale":1,"context":"interactive","results":"markup","out-width":"700px","autorun":"false","warning":"true","fig-height":5,"output":"true","read-only":"false","editor-max-height":"","editor-quick-suggestions":"false","fig-cap":""}},{"code":"\ntable(penguins$species)","id":7,"options":{"fig-width":7,"message":"true","comment":"","label":"unnamed-chunk-7","classes":"","out-height":"","dpi":72,"editor-font-scale":1,"context":"output","results":"markup","out-width":"700px","autorun":"true","warning":"true","fig-height":5,"output":"true","read-only":"false","editor-max-height":"","editor-quick-suggestions":"false","fig-cap":""}}];
+  globalThis.qwebrCellDetails = [{"id":1,"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)","options":{"read-only":"false","output":"true","message":"true","autorun":"true","editor-font-scale":1,"warning":"true","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-1","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"setup"}},{"id":2,"code":"ggplot(diamonds, aes(x=cut, y=carat, \n                     fill=cut)) +\n  geom_boxplot()","options":{"read-only":"false","output":"true","message":"true","autorun":"false","editor-font-scale":1,"warning":"true","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-2","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"interactive"}},{"id":3,"code":"library(palmerpenguins)\ntable(penguins$island)","options":{"read-only":"false","output":"true","message":"true","autorun":"false","editor-font-scale":1,"warning":"true","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-3","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"interactive"}},{"id":4,"code":"penguins_small <- \n    penguins |> select(species, bill_length_mm)","options":{"read-only":"false","output":"true","message":"true","autorun":"false","editor-font-scale":1,"warning":"true","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-4","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"interactive"}},{"id":5,"code":"head(penguins_small)","options":{"read-only":"false","output":"true","message":"true","autorun":"false","editor-font-scale":1,"warning":"true","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-5","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"interactive"}},{"id":6,"code":"ggplot(penguins) +\n  aes(x=bill_length_mm, y=bill_depth_mm) +\n  geom_hex() + ---------","options":{"read-only":"false","output":"true","message":"true","autorun":"false","editor-font-scale":1,"warning":"false","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-6","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"interactive"}},{"id":7,"code":"list.files()\nurl <- 'https://laderast.github.io/webr-demo/data/penguins.csv'\ndownload.file(url, 'penguins.csv')\nlist.files()","options":{"read-only":"false","output":"true","message":"true","autorun":"false","editor-font-scale":1,"warning":"true","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-7","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"interactive"}},{"id":8,"code":"penguins2 <- read.csv(\"penguins.csv\")\npenguins2 |>\n  count(species)","options":{"read-only":"false","output":"true","message":"true","autorun":"false","editor-font-scale":1,"warning":"true","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-8","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"interactive"}},{"id":9,"code":"\ntable(penguins$species)","options":{"read-only":"false","output":"true","message":"true","autorun":"true","editor-font-scale":1,"warning":"true","out-width":"700px","fig-width":7,"classes":"","results":"markup","fig-cap":"","fig-height":5,"label":"unnamed-chunk-9","comment":"","editor-max-height":"","dpi":72,"out-height":"","editor-quick-suggestions":"false","context":"output"}}];
 
   </script>
   <script type="module">
@@ -1714,6 +1714,13 @@ Ted Laderas
 <li class="fragment">Shinylive (Shiny without Shiny Server)</li>
 </ul>
 </section>
+<section id="how-does-webr-work" class="slide level2">
+<h2>How does WebR work?</h2>
+<ul>
+<li class="fragment">R has been compiled to WebAssembly</li>
+<li class="fragment">Browsers include WebAssembly and JavaScript</li>
+</ul>
+</section>
 <section id="this-is-a-huge-accomplishment" class="slide level2" data-background-color="black">
 <h2>This is a huge accomplishment</h2>
 <p><img data-src="111-002.png" style="width:60.0%"> <a href="https://rud.is/w/2023-nyr-webr/#/now">Source: Bob Rudis’ WebR Talk</a></p>
@@ -1727,11 +1734,10 @@ Ted Laderas
 <li class="fragment">Everything is run in the browser</li>
 </ul>
 </section>
-<section id="how-does-webr-work" class="slide level2">
-<h2>How does WebR work?</h2>
+<section id="communication" class="slide level2">
+<h2>Communication</h2>
 <ul>
-<li class="fragment">Webpages use Javascript to run R Scripts in Worker</li>
-<li class="fragment">Browsers include WebAssembly and JavaScript</li>
+<li class="fragment">Webpages use Javascript to communicate with WebR Worker</li>
 <li class="fragment">Results are returned within a <code>&lt;div&gt;</code></li>
 </ul>
 </section>
@@ -1760,8 +1766,8 @@ Ted Laderas
 <h1>Getting started with Quarto/WebR</h1>
 
 </section>
-<section id="first-create-a-project" class="slide level2">
-<h2>First, Create a Project</h2>
+<section id="first-create-a-project-in-rstudio" class="slide level2">
+<h2>First, Create a Project in RStudio</h2>
 <p>File &gt;&gt; New Project &gt;&gt; New Folder &gt;&gt; Quarto Website</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="ex">├──</span> _quarto.yml</span>
 <span id="cb1-2"><a></a><span class="ex">├──</span> _site</span>
@@ -1903,7 +1909,15 @@ Ted Laderas
 <li class="fragment">Every webpage is a single WebR Session</li>
 <li class="fragment">Data objects persist between code windows</li>
 <li class="fragment">Be careful with incremental lessons with multiple code windows</li>
+<li class="fragment">Design consideration: what goes together in a single webpage?</li>
 </ul>
+</section>
+<section id="persistence-of-penguins" class="slide level2">
+<h2>Persistence of Penguins</h2>
+<div id="qwebr-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div id="qwebr-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section></section>
 <section>
 <section id="education-example" class="title-slide slide level1 center">
@@ -1913,7 +1927,7 @@ Ted Laderas
 <section id="adding-layers" class="slide level2">
 <h2>Adding Layers</h2>
 <p>Add another layer to the below plot by appending a <code>geom_point(aes(color=species))</code> to it.</p>
-<div id="qwebr-insertion-location-4"></div>
+<div id="qwebr-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section></section>
 <section>
@@ -1949,12 +1963,12 @@ Ted Laderas
 <section id="getting-data-in-from-a-url" class="slide level2">
 <h2>Getting data in from a URL</h2>
 <p>For teaching, put in a <code>context: setup</code> chunk:</p>
-<div id="qwebr-insertion-location-5"></div>
+<div id="qwebr-insertion-location-7"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="loading-data-in-the-filesystem" class="slide level2">
 <h2>Loading data in the filesystem</h2>
-<div id="qwebr-insertion-location-6"></div>
+<div id="qwebr-insertion-location-8"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="rwasmfile_packager" class="slide level2">
@@ -1991,7 +2005,7 @@ Ted Laderas
 </section>
 <section id="context-output-1" class="slide level2">
 <h2><code>context: output</code></h2>
-<div id="qwebr-insertion-location-7"></div>
+<div id="qwebr-insertion-location-9"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section></section>
 <section>

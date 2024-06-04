@@ -70,6 +70,13 @@
     "text": "Why WebR?\n\nEducation\n\nWorks on phones!\n\nInternal Websites\n\nSharepoint\n\nShinylive (Shiny without Shiny Server)"
   },
   {
+    "objectID": "index.html#how-does-webr-work",
+    "href": "index.html#how-does-webr-work",
+    "title": "WebR: Why, What, How",
+    "section": "How does WebR work?",
+    "text": "How does WebR work?\n\nR has been compiled to WebAssembly\nBrowsers include WebAssembly and JavaScript"
+  },
+  {
     "objectID": "index.html#this-is-a-huge-accomplishment",
     "href": "index.html#this-is-a-huge-accomplishment",
     "title": "WebR: Why, What, How",
@@ -84,11 +91,11 @@
     "text": "WebR Worker\n\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser"
   },
   {
-    "objectID": "index.html#how-does-webr-work",
-    "href": "index.html#how-does-webr-work",
+    "objectID": "index.html#communication",
+    "href": "index.html#communication",
     "title": "WebR: Why, What, How",
-    "section": "How does WebR work?",
-    "text": "How does WebR work?\n\nWebpages use Javascript to run R Scripts in Worker\nBrowsers include WebAssembly and JavaScript\nResults are returned within a &lt;div&gt;"
+    "section": "Communication",
+    "text": "Communication\n\nWebpages use Javascript to communicate with WebR Worker\nResults are returned within a &lt;div&gt;"
   },
   {
     "objectID": "index.html#where-to-read-about-webr",
@@ -105,11 +112,11 @@
     "text": "Recommended for Users: Quarto/WebR documentation\n\nBy James Balamuta and company\nQuarto WebR documentation\nQuarto/WebR extension\nHandles the communication between JS and WebR\nDon’t worry!"
   },
   {
-    "objectID": "index.html#first-create-a-project",
-    "href": "index.html#first-create-a-project",
+    "objectID": "index.html#first-create-a-project-in-rstudio",
+    "href": "index.html#first-create-a-project-in-rstudio",
     "title": "WebR: Why, What, How",
-    "section": "First, Create a Project",
-    "text": "First, Create a Project\nFile &gt;&gt; New Project &gt;&gt; New Folder &gt;&gt; Quarto Website\n├── _quarto.yml\n├── _site\n├── about.qmd\n├── index.qmd\n├── styles.css\n└── webr-demo.Rproj"
+    "section": "First, Create a Project in RStudio",
+    "text": "First, Create a Project in RStudio\nFile &gt;&gt; New Project &gt;&gt; New Folder &gt;&gt; Quarto Website\n├── _quarto.yml\n├── _site\n├── about.qmd\n├── index.qmd\n├── styles.css\n└── webr-demo.Rproj"
   },
   {
     "objectID": "index.html#next-install-quarto-extension-in-project",
@@ -179,7 +186,14 @@
     "href": "index.html#keep-in-mind",
     "title": "WebR: Why, What, How",
     "section": "Keep in Mind",
-    "text": "Keep in Mind\n\nEvery webpage is a single WebR Session\nData objects persist between code windows\nBe careful with incremental lessons with multiple code windows"
+    "text": "Keep in Mind\n\nEvery webpage is a single WebR Session\nData objects persist between code windows\nBe careful with incremental lessons with multiple code windows\nDesign consideration: what goes together in a single webpage?"
+  },
+  {
+    "objectID": "index.html#persistence-of-penguins",
+    "href": "index.html#persistence-of-penguins",
+    "title": "WebR: Why, What, How",
+    "section": "Persistence of Penguins",
+    "text": "Persistence of Penguins\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "index.html#adding-layers",
