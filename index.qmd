@@ -60,7 +60,7 @@ ggplot(diamonds, aes(x=cut, y=carat,
 ## This is a huge accomplishment {background-color="black"}
 
 ![](111-002.png){width="60%"}
-[Source: Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/#/now)
+[Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/#/now)
 
 ## WebR Worker {background-color="white"}
 
@@ -239,6 +239,8 @@ table(penguins$island)
 penguins_small <- 
     penguins |> select(species, bill_length_mm)
 ```
+
+Be careful with multi-stage problems - mistakes may propagate
 
 ```{webr-r}
 head(penguins_small)
