@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://laderast.github.io/webr-demo/index.html</loc>
-    <lastmod>2024-06-04T14:57:12.641Z</lastmod>
+    <loc>https://laderast.github.io/webr-demo/quarto_diagrams.html</loc>
+    <lastmod>2024-06-04T15:46:57.903Z</lastmod>
   </url>
   <url>
     <loc>https://laderast.github.io/webr-demo/about.html</loc>
-    <lastmod>2024-06-04T14:57:12.593Z</lastmod>
+    <lastmod>2024-06-04T15:46:57.855Z</lastmod>
+  </url>
+  <url>
+    <loc>https://laderast.github.io/webr-demo/index.html</loc>
+    <lastmod>2024-06-04T15:46:57.903Z</lastmod>
   </url>
 </urlset>

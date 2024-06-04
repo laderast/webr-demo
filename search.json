@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "quarto_diagrams.html",
+    "href": "quarto_diagrams.html",
+    "title": "WebR: Why, What, How",
+    "section": "",
+    "text": "After watching this presentation, you will be able to\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "quarto_diagrams.html#learning-objectives",
+    "href": "quarto_diagrams.html#learning-objectives",
+    "title": "WebR: Why, What, How",
+    "section": "",
+    "text": "After watching this presentation, you will be able to\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "quarto_diagrams.html#what-is-webr",
+    "href": "quarto_diagrams.html#what-is-webr",
+    "title": "WebR: Why, What, How",
+    "section": "What is WebR?",
+    "text": "What is WebR?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "quarto_diagrams.html#why-webr",
+    "href": "quarto_diagrams.html#why-webr",
+    "title": "WebR: Why, What, How",
+    "section": "Why WebR?",
+    "text": "Why WebR?\n\nEducation\n\nWorks on phones!\n\nInternal Websites\n\nSharepoint\n\nShinylive (Shiny without Shiny Server)"
+  },
+  {
+    "objectID": "quarto_diagrams.html#this-is-a-huge-accomplishment",
+    "href": "quarto_diagrams.html#this-is-a-huge-accomplishment",
+    "title": "WebR: Why, What, How",
+    "section": "This is a huge accomplishment",
+    "text": "This is a huge accomplishment\n Source: Bob Rudis’ WebR Talk"
+  },
+  {
+    "objectID": "quarto_diagrams.html#webr-worker",
+    "href": "quarto_diagrams.html#webr-worker",
+    "title": "WebR: Why, What, How",
+    "section": "WebR Worker",
+    "text": "WebR Worker\n\n\n\n\n\nflowchart LR\n    subgraph browser [web browser]\n        direction LR\n        A[Javascript] --requests--&gt; B[WebR Worker] \n        B --response--&gt; A \n    end\n    style browser fill:#fff"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "index.html#learning-objectives",
     "href": "index.html#learning-objectives",
     "title": "WebR: Why, What, How",
@@ -32,7 +81,7 @@
     "href": "index.html#webr-worker",
     "title": "WebR: Why, What, How",
     "section": "WebR Worker",
-    "text": "WebR Worker\n\n\n\n\n\n\nflowchart LR\n    subgraph browser [web browser]\n        direction LR\n        A[Javascript] --requests--&gt; B[WebR Worker] \n        B --response--&gt; A \n    end\n    style browser fill:#fff\n\n\n\n\nFigure 1\n\n\n\n\n\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser"
+    "text": "WebR Worker\n\n\nWebR launches a worker process in browser\nUses JavaScript to communicate between web page and worker\nEverything is run in the browser"
   },
   {
     "objectID": "index.html#how-does-webr-work",
@@ -67,7 +116,14 @@
     "href": "index.html#next-install-quarto-extension-in-project",
     "title": "WebR: Why, What, How",
     "section": "Next, install Quarto Extension in Project",
-    "text": "Next, install Quarto Extension in Project\n\nIn the RStudio Terminal Window:\n\nquarto add coatless/quarto-webr\nThis folder will be installed in your project:\n├── _extensions\n│   └── coatless\n│       └── webr  ## Contains a lot of JavaScript"
+    "text": "Next, install Quarto Extension in Project\n\n\nIn the RStudio Terminal Window:\n\nquarto add coatless/quarto-webr"
+  },
+  {
+    "objectID": "index.html#next-install-quarto-extension-in-project-1",
+    "href": "index.html#next-install-quarto-extension-in-project-1",
+    "title": "WebR: Why, What, How",
+    "section": "Next, install Quarto Extension in Project",
+    "text": "Next, install Quarto Extension in Project\n\n\nIn the RStudio Terminal Window:\n\nquarto add coatless/quarto-webr\nThis folder will be installed in your project:\n├── _extensions\n│   └── coatless\n│       └── webr  ## Contains a lot of JavaScript"
   },
   {
     "objectID": "index.html#quarto-frontmatter",
@@ -95,14 +151,14 @@
     "href": "index.html#a-note-about-packages",
     "title": "WebR: Why, What, How",
     "section": "A Note about Packages",
-    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\n\n{rwasm} package\nNeed to solve dependencies\n\nUsing R Packages in WebR\n\nCan install in realtime or using the webr::install() option"
+    "text": "A Note about Packages\n\nPackages need to be compiled for WebAssembly\n\n{rwasm} package\nNeed to solve dependencies (for FORTRAN, C++, code)\n\nUsing R Packages in WebR\n\nCan install in setup chunk or using the webr::install() option"
   },
   {
-    "objectID": "index.html#not-all-dependencies",
-    "href": "index.html#not-all-dependencies",
+    "objectID": "index.html#not-all-dependencies-are-available",
+    "href": "index.html#not-all-dependencies-are-available",
     "title": "WebR: Why, What, How",
-    "section": "Not all dependencies",
-    "text": "Not all dependencies\n\nWebR Compiled Packages\n\nDefault repository for packages (19532+ compiled, but not everything)\n\nSome packages don’t have all dependencies compiled\n\nExample: Bioconductor (Biobase) is not compiled"
+    "section": "Not all dependencies are available",
+    "text": "Not all dependencies are available\n\nWebR Compiled Packages\n\nDefault repository for packages (19532+ compiled, but not everything)\n\nSome packages don’t have all dependencies compiled\n\nExample: Bioconductor (Biobase) is not compiled"
   },
   {
     "objectID": "index.html#quartowebr-block",
@@ -117,6 +173,13 @@
     "title": "WebR: Why, What, How",
     "section": "Quarto/WebR Block",
     "text": "Quarto/WebR Block\n```{webr-r}\nlibrary(palmerpenguins)\ntable(penguins$island)\n```\nThis becomes:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#keep-in-mind",
+    "href": "index.html#keep-in-mind",
+    "title": "WebR: Why, What, How",
+    "section": "Keep in Mind",
+    "text": "Keep in Mind\n\nEvery webpage is a single WebR Session\nData objects persist between code windows\nBe careful with incremental lessons with multiple code windows"
   },
   {
     "objectID": "index.html#adding-layers",
@@ -186,7 +249,7 @@
     "href": "index.html#deployment",
     "title": "WebR: Why, What, How",
     "section": "Deployment",
-    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nDo not need a Shiny server, just something that serves HTML\nBrowser needs internet access to download packages\nAll computations are done in the browser"
+    "text": "Deployment\n\nYou will need a web server to deploy your WebR page\nServe HTML, no shiny server needed\nBrowser needs internet access to download packages"
   },
   {
     "objectID": "index.html#deployment-1",
@@ -215,12 +278,5 @@
     "title": "WebR: Why, What, How",
     "section": "Keep in Touch",
     "text": "Keep in Touch\n\nMastodon: https://vmst.io/@tladeras\nEmail: tedladeras at gmail\nWeb: https://laderast.github.io\n\n\n\n\nhttps://laderast.github.io/webr-demo"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
