@@ -372,6 +372,7 @@ table(penguins$species)
 
 ## Keep in Touch
 
+- Source code: <https://github.com/laderast/webr-demo/>
 - Mastodon: <https://vmst.io/@tladeras>
 - Email: tedladeras at gmail
 - Web: <https://laderast.github.io>
