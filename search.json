@@ -81,7 +81,7 @@
     "href": "index.html#this-is-a-huge-accomplishment",
     "title": "WebR: Why, What, How",
     "section": "This is a huge accomplishment",
-    "text": "This is a huge accomplishment\n Source: Bob Rudis’ WebR Talk"
+    "text": "This is a huge accomplishment\n Bob Rudis’ WebR Talk"
   },
   {
     "objectID": "index.html#webr-worker",
@@ -193,7 +193,7 @@
     "href": "index.html#persistence-of-penguins",
     "title": "WebR: Why, What, How",
     "section": "Persistence of Penguins",
-    "text": "Persistence of Penguins\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Persistence of Penguins\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nBe careful with multi-stage problems - mistakes may propagate\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "index.html#adding-layers",
@@ -291,6 +291,6 @@
     "href": "index.html#keep-in-touch",
     "title": "WebR: Why, What, How",
     "section": "Keep in Touch",
-    "text": "Keep in Touch\n\nMastodon: https://vmst.io/@tladeras\nEmail: tedladeras at gmail\nWeb: https://laderast.github.io\n\n\n\n\nhttps://laderast.github.io/webr-demo"
+    "text": "Keep in Touch\n\nSource code: https://github.com/laderast/webr-demo/\nMastodon: https://vmst.io/@tladeras\nEmail: tedladeras at gmail\nWeb: https://laderast.github.io\n\n\n\n\nhttps://laderast.github.io/webr-demo"
   }
 ]
