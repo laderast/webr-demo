@@ -595,7 +595,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)","id":1,"options":{"context":"setup","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-1","message":"true","autorun":"true","fig-width":7,"warning":"true","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}},{"code":"ggplot(diamonds, aes(x=cut, y=carat, \n                     fill=cut)) +\n  geom_boxplot()","id":2,"options":{"context":"interactive","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-2","message":"true","autorun":"false","fig-width":7,"warning":"true","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}},{"code":"library(palmerpenguins)\ntable(penguins$island)","id":3,"options":{"context":"interactive","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-3","message":"true","autorun":"false","fig-width":7,"warning":"true","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}},{"code":"penguins_small <- \n    penguins |> select(species, bill_length_mm)","id":4,"options":{"context":"interactive","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-4","message":"true","autorun":"false","fig-width":7,"warning":"true","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}},{"code":"head(penguins_small)","id":5,"options":{"context":"interactive","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-5","message":"true","autorun":"false","fig-width":7,"warning":"true","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}},{"code":"ggplot(penguins) +\n  aes(x=bill_length_mm, y=bill_depth_mm) +\n  geom_hex() + ---------","id":6,"options":{"context":"interactive","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-6","message":"true","autorun":"false","fig-width":7,"warning":"false","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}},{"code":"list.files()\nurl <- 'https://laderast.github.io/webr-demo/data/penguins.csv'\ndownload.file(url, 'penguins.csv')\nlist.files()","id":7,"options":{"context":"interactive","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-7","message":"true","autorun":"false","fig-width":7,"warning":"true","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}},{"code":"penguins2 <- read.csv(\"penguins.csv\")\npenguins2 |>\n  count(species)","id":8,"options":{"context":"interactive","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-8","message":"true","autorun":"false","fig-width":7,"warning":"true","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}},{"code":"\ntable(penguins$species)","id":9,"options":{"context":"output","editor-max-height":"","out-width":"700px","editor-font-scale":1,"out-height":"","fig-height":5,"output":"true","label":"unnamed-chunk-9","message":"true","autorun":"true","fig-width":7,"warning":"true","editor-quick-suggestions":"false","classes":"","dpi":72,"read-only":"false","fig-cap":"","comment":"","results":"markup"}}];
+  globalThis.qwebrCellDetails = [{"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)","id":1,"options":{"message":"true","out-width":"700px","autorun":"true","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"true","context":"setup","label":"unnamed-chunk-1","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}},{"code":"ggplot(diamonds, aes(x=cut, y=carat, \n                     fill=cut)) +\n  geom_boxplot()","id":2,"options":{"message":"true","out-width":"700px","autorun":"false","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"true","context":"interactive","label":"unnamed-chunk-2","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}},{"code":"library(palmerpenguins)\ntable(penguins$island)","id":3,"options":{"message":"true","out-width":"700px","autorun":"false","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"true","context":"interactive","label":"unnamed-chunk-3","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}},{"code":"penguins_small <- \n    penguins |> select(species, bill_length_mm)","id":4,"options":{"message":"true","out-width":"700px","autorun":"false","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"true","context":"interactive","label":"unnamed-chunk-4","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}},{"code":"head(penguins_small)","id":5,"options":{"message":"true","out-width":"700px","autorun":"false","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"true","context":"interactive","label":"unnamed-chunk-5","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}},{"code":"ggplot(penguins) +\n  aes(x=bill_length_mm, y=bill_depth_mm) +\n  geom_hex() + ---------","id":6,"options":{"message":"true","out-width":"700px","autorun":"false","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"false","context":"interactive","label":"unnamed-chunk-6","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}},{"code":"list.files()\nurl <- 'https://laderast.github.io/webr-demo/data/penguins.csv'\ndownload.file(url, 'penguins.csv')\nlist.files()","id":7,"options":{"message":"true","out-width":"700px","autorun":"false","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"true","context":"interactive","label":"unnamed-chunk-7","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}},{"code":"penguins2 <- read.csv(\"penguins.csv\")\npenguins2 |>\n  count(species)","id":8,"options":{"message":"true","out-width":"700px","autorun":"false","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"true","context":"interactive","label":"unnamed-chunk-8","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}},{"code":"\ntable(penguins$species)","id":9,"options":{"message":"true","out-width":"700px","autorun":"true","editor-font-scale":1,"editor-quick-suggestions":"false","fig-cap":"","comment":"","dpi":72,"fig-width":7,"warning":"true","context":"output","label":"unnamed-chunk-9","read-only":"false","out-height":"","editor-max-height":"","results":"markup","fig-height":5,"classes":"","output":"true"}}];
 
   </script>
   <script type="module">
@@ -1703,7 +1703,7 @@ Ted Laderas
 <section id="why-webr" class="slide level2">
 <h2>Why WebR?</h2>
 <ul>
-<li class="fragment">Education
+<li class="fragment">Education (example from <a href="https://datavizs24.classes.andrewheiss.com/lesson/06-lesson.html#histograms">Andrew Heiss</a>)
 <ul>
 <li class="fragment">Works on phones!</li>
 </ul></li>
@@ -1717,7 +1717,10 @@ Ted Laderas
 <section id="how-does-webr-work" class="slide level2">
 <h2>How does WebR work?</h2>
 <ul>
-<li class="fragment">R has been compiled to WebAssembly</li>
+<li class="fragment">R has been compiled to WebAssembly
+<ul>
+<li class="fragment">Machine code for web browsers</li>
+</ul></li>
 <li class="fragment">Browsers include WebAssembly and JavaScript</li>
 </ul>
 </section>
@@ -1854,6 +1857,9 @@ Ted Laderas
 </ul></li>
 </ul>
 </section>
+<section id="full-frontmatter" class="slide level2">
+<h2>Full Frontmatter</h2>
+</section>
 <section id="a-note-about-packages" class="slide level2">
 <h2>A Note about Packages</h2>
 <ul>
@@ -1930,6 +1936,15 @@ Ted Laderas
 <p>Add another layer to the below plot by appending a <code>geom_point(aes(color=species))</code> to it.</p>
 <div id="qwebr-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="wrapping-up" class="slide level2">
+<h2>Wrapping Up</h2>
+<p>Hopefully you learned to:</p>
+<ul>
+<li class="fragment"><strong>Articulate</strong> <em>what</em> WebR is and how it lets your run in the browser</li>
+<li class="fragment"><strong>Explain</strong> <em>why</em> to use WebR in your educational work</li>
+<li class="fragment"><strong>Utilize</strong> WebR in your presentations and web pages (<em>how</em>)</li>
+</ul>
 </section></section>
 <section>
 <section id="webr-filesystem" class="title-slide slide level1 center">

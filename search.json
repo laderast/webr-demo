@@ -67,14 +67,14 @@
     "href": "index.html#why-webr",
     "title": "WebR: Why, What, How",
     "section": "Why WebR?",
-    "text": "Why WebR?\n\nEducation\n\nWorks on phones!\n\nInternal Websites\n\nSharepoint\n\nShinylive (Shiny without Shiny Server)"
+    "text": "Why WebR?\n\nEducation (example from Andrew Heiss)\n\nWorks on phones!\n\nInternal Websites\n\nSharepoint\n\nShinylive (Shiny without Shiny Server)"
   },
   {
     "objectID": "index.html#how-does-webr-work",
     "href": "index.html#how-does-webr-work",
     "title": "WebR: Why, What, How",
     "section": "How does WebR work?",
-    "text": "How does WebR work?\n\nR has been compiled to WebAssembly\nBrowsers include WebAssembly and JavaScript"
+    "text": "How does WebR work?\n\nR has been compiled to WebAssembly\n\nMachine code for web browsers\n\nBrowsers include WebAssembly and JavaScript"
   },
   {
     "objectID": "index.html#this-is-a-huge-accomplishment",
@@ -154,6 +154,13 @@
     "text": "Quarto Frontmatter\n\n---\ntitle: \"My WebR Demo\"\nformat: html\nengine: knitr\nfilters:                         \n  - webr                         \nwebr:                            \n  packages: ['ggplot2', 'dplyr', 'palmerpenguins']\n---\n\n\nwebr is where you set options:\n\npackages: to install\nbase-url: to change WebR repository\ncell-options: to set default code window options"
   },
   {
+    "objectID": "index.html#full-frontmatter",
+    "href": "index.html#full-frontmatter",
+    "title": "WebR: Why, What, How",
+    "section": "Full Frontmatter",
+    "text": "Full Frontmatter"
+  },
+  {
     "objectID": "index.html#a-note-about-packages",
     "href": "index.html#a-note-about-packages",
     "title": "WebR: Why, What, How",
@@ -201,6 +208,13 @@
     "title": "WebR: Why, What, How",
     "section": "Adding Layers",
     "text": "Adding Layers\nAdd another layer to the below plot by appending a geom_point(aes(color=species)) to it.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#wrapping-up",
+    "href": "index.html#wrapping-up",
+    "title": "WebR: Why, What, How",
+    "section": "Wrapping Up",
+    "text": "Wrapping Up\nHopefully you learned to:\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)"
   },
   {
     "objectID": "index.html#what-about-files",
