@@ -1,7 +1,7 @@
 ---
 title: "WebR: Why, What, How"
 subtitle: "Fred Hutch User Group"
-date: 5/15/2024
+date: 6/6/2024
 author: Ted Laderas
 engine: knitr
 filters: 
