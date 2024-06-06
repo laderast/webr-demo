@@ -54,8 +54,8 @@ ggplot(diamonds, aes(x=cut, y=carat,
 ## How does WebR work?
 
 - R has been compiled to WebAssembly
-  - Machine code for web browsers
-- Browsers include WebAssembly and JavaScript
+  - Machine code (low-level) for web browsers
+- Browsers can run both WebAssembly and JavaScript
 
 ## This is a huge accomplishment {background-color="black"}
 
