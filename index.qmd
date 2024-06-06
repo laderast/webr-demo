@@ -16,7 +16,6 @@ format:
       - data/*
 webr:
   packages: ['ggplot2', 'dplyr', 'palmerpenguins', 'hexbin']
-  
 ---
 
 ## Learning Objectives
@@ -46,7 +45,7 @@ ggplot(diamonds, aes(x=cut, y=carat,
 
 ## Why WebR?
 
-- Education
+- Education (example from [Andrew Heiss](https://datavizs24.classes.andrewheiss.com/lesson/06-lesson.html#histograms))
   - Works on phones!
 - Internal Websites
   - Sharepoint
@@ -55,6 +54,7 @@ ggplot(diamonds, aes(x=cut, y=carat,
 ## How does WebR work?
 
 - R has been compiled to WebAssembly
+  - Machine code for web browsers
 - Browsers include WebAssembly and JavaScript
 
 ## This is a huge accomplishment {background-color="black"}
@@ -188,6 +188,20 @@ webr:
     - `base-url:` to change WebR repository
     - `cell-options:` to set default code window options
 
+## Full Frontmatter
+
+```{markdonw}
+---
+title: "My WebR Demo"
+format: html
+engine: knitr
+filters:                         
+  - webr                         
+webr:                            
+  packages: ['ggplot2', 'dplyr', 'palmerpenguins']
+---  
+```
+
 ## A Note about Packages
 
 - Packages need to be compiled for WebAssembly
@@ -258,6 +272,16 @@ ggplot(penguins) +
   aes(x=bill_length_mm, y=bill_depth_mm) +
   geom_hex() + ---------
 ```
+
+## Wrapping Up
+
+Hopefully you learned to:
+
+- **Articulate** *what* WebR is and how it lets your run in the browser
+- **Explain** *why* to use WebR in your educational work
+- **Utilize** WebR in your presentations and web pages (*how*)
+
+
 
 # WebR Filesystem
 

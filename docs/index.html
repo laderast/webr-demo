@@ -386,9 +386,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/editor/editor.main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
@@ -598,7 +595,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"options":{"comment":"","warning":"true","out-height":"","fig-cap":"","editor-quick-suggestions":"false","context":"setup","dpi":72,"autorun":"true","fig-height":5,"results":"markup","label":"unnamed-chunk-1","editor-font-scale":1,"message":"true","editor-max-height":"","fig-width":7,"read-only":"false","output":"true","classes":"","out-width":"700px"},"id":1,"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)"},{"options":{"comment":"","warning":"true","out-height":"","fig-cap":"","editor-quick-suggestions":"false","context":"interactive","dpi":72,"autorun":"false","fig-height":5,"results":"markup","label":"unnamed-chunk-2","editor-font-scale":1,"message":"true","editor-max-height":"","fig-width":7,"read-only":"false","output":"true","classes":"","out-width":"700px"},"id":2,"code":"ggplot(diamonds, aes(x=cut, y=carat, \n                     fill=cut)) +\n  geom_boxplot()"},{"options":{"comment":"","warning":"true","out-height":"","fig-cap":"","editor-quick-suggestions":"false","context":"interactive","dpi":72,"autorun":"false","fig-height":5,"results":"markup","label":"unnamed-chunk-3","editor-font-scale":1,"message":"true","editor-max-height":"","fig-width":7,"read-only":"false","output":"true","classes":"","out-width":"700px"},"id":3,"code":"library(palmerpenguins)\ntable(penguins$island)"},{"options":{"comment":"","warning":"true","out-height":"","fig-cap":"","editor-quick-suggestions":"false","context":"output","dpi":72,"autorun":"true","fig-height":5,"results":"markup","label":"unnamed-chunk-4","editor-font-scale":1,"message":"true","editor-max-height":"","fig-width":7,"read-only":"false","output":"true","classes":"","out-width":"700px"},"id":4,"code":"\ntable(penguins$species)"},{"options":{"comment":"","warning":"false","out-height":"","fig-cap":"","editor-quick-suggestions":"false","context":"interactive","dpi":72,"autorun":"false","fig-height":5,"results":"markup","label":"unnamed-chunk-5","editor-font-scale":1,"message":"true","editor-max-height":"","fig-width":7,"read-only":"false","output":"true","classes":"","out-width":"700px"},"id":5,"code":"ggplot(penguins) +\n  aes(x=bill_length_mm, y=bill_depth_mm) +\n  geom_hex() + ---------"},{"options":{"comment":"","warning":"true","out-height":"","fig-cap":"","editor-quick-suggestions":"false","context":"interactive","dpi":72,"autorun":"false","fig-height":5,"results":"markup","label":"unnamed-chunk-6","editor-font-scale":1,"message":"true","editor-max-height":"","fig-width":7,"read-only":"false","output":"true","classes":"","out-width":"700px"},"id":6,"code":"list.files()\nurl <- 'https://laderast.github.io/webr-demo/data/penguins.csv'\ndownload.file(url, 'penguins.csv')\nlist.files()"},{"options":{"comment":"","warning":"true","out-height":"","fig-cap":"","editor-quick-suggestions":"false","context":"interactive","dpi":72,"autorun":"false","fig-height":5,"results":"markup","label":"unnamed-chunk-7","editor-font-scale":1,"message":"true","editor-max-height":"","fig-width":7,"read-only":"false","output":"true","classes":"","out-width":"700px"},"id":7,"code":"penguins2 <- read.csv(\"penguins.csv\")\npenguins2 |>\n  count(species)"}];
+  globalThis.qwebrCellDetails = [{"id":1,"code":"library(dplyr)\nlibrary(ggplot2)\nlibrary(palmerpenguins)","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"true","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-1","out-width":"700px","message":"true","autorun":"true","out-height":"","context":"setup","dpi":72,"fig-width":7}},{"id":2,"code":"ggplot(diamonds, aes(x=cut, y=carat, \n                     fill=cut)) +\n  geom_boxplot()","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"true","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-2","out-width":"700px","message":"true","autorun":"false","out-height":"","context":"interactive","dpi":72,"fig-width":7}},{"id":3,"code":"library(palmerpenguins)\ntable(penguins$island)","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"true","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-3","out-width":"700px","message":"true","autorun":"false","out-height":"","context":"interactive","dpi":72,"fig-width":7}},{"id":4,"code":"penguins_small <- \n    penguins |> select(species, bill_length_mm)","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"true","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-4","out-width":"700px","message":"true","autorun":"false","out-height":"","context":"interactive","dpi":72,"fig-width":7}},{"id":5,"code":"head(penguins_small)","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"true","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-5","out-width":"700px","message":"true","autorun":"false","out-height":"","context":"interactive","dpi":72,"fig-width":7}},{"id":6,"code":"ggplot(penguins) +\n  aes(x=bill_length_mm, y=bill_depth_mm) +\n  geom_hex() + ---------","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"false","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-6","out-width":"700px","message":"true","autorun":"false","out-height":"","context":"interactive","dpi":72,"fig-width":7}},{"id":7,"code":"list.files()\nurl <- 'https://laderast.github.io/webr-demo/data/penguins.csv'\ndownload.file(url, 'penguins.csv')\nlist.files()","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"true","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-7","out-width":"700px","message":"true","autorun":"false","out-height":"","context":"interactive","dpi":72,"fig-width":7}},{"id":8,"code":"penguins2 <- read.csv(\"penguins.csv\")\npenguins2 |>\n  count(species)","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"true","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-8","out-width":"700px","message":"true","autorun":"false","out-height":"","context":"interactive","dpi":72,"fig-width":7}},{"id":9,"code":"\ntable(penguins$species)","options":{"comment":"","results":"markup","read-only":"false","editor-font-scale":1,"warning":"true","output":"true","fig-height":5,"classes":"","editor-quick-suggestions":"false","editor-max-height":"","fig-cap":"","label":"unnamed-chunk-9","out-width":"700px","message":"true","autorun":"true","out-height":"","context":"output","dpi":72,"fig-width":7}}];
 
   </script>
   <script type="module">
@@ -1682,9 +1679,9 @@ Ted Laderas
 
   <p class="date">2024-05-15</p>
 </section>
-<section id="this-presentation" class="slide level2">
-<h2>This Presentation</h2>
-<p>After this presentation, you will be able to</p>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning Objectives</h2>
+<p>After watching this presentation, you will be able to</p>
 <ul>
 <li class="fragment"><strong>Articulate</strong> <em>what</em> WebR is and how it lets your run in the browser</li>
 <li class="fragment"><strong>Explain</strong> <em>why</em> to use WebR in your educational work</li>
@@ -1706,56 +1703,43 @@ Ted Laderas
 <section id="why-webr" class="slide level2">
 <h2>Why WebR?</h2>
 <ul>
-<li class="fragment">Education</li>
-<li class="fragment">Internal Websites</li>
+<li class="fragment">Education
+<ul>
+<li class="fragment">Works on phones!</li>
+</ul></li>
+<li class="fragment">Internal Websites
+<ul>
+<li class="fragment">Sharepoint</li>
+</ul></li>
 <li class="fragment">Shinylive (Shiny without Shiny Server)</li>
 </ul>
 </section>
 <section id="how-does-webr-work" class="slide level2">
 <h2>How does WebR work?</h2>
 <ul>
+<li class="fragment">R has been compiled to WebAssembly</li>
 <li class="fragment">Browsers include WebAssembly and JavaScript</li>
-<li class="fragment">Webpages use Javascript to execute WebR scripts</li>
-<li class="fragment">Results are returned within a <code>&lt;div&gt;</code>
-<ul>
-<li class="fragment">Special R canvas called HTML</li>
-</ul></li>
 </ul>
 </section>
 <section id="this-is-a-huge-accomplishment" class="slide level2" data-background-color="black">
 <h2>This is a huge accomplishment</h2>
-<p><img data-src="111-002.png" style="width:60.0%"> <a href="https://rud.is/w/2023-nyr-webr/#/now">Source: Bob Rudis’ WebR Talk</a></p>
+<p><img data-src="111-002.png" style="width:60.0%"> <a href="https://rud.is/w/2023-nyr-webr/#/now">Bob Rudis’ WebR Talk</a></p>
 </section>
 <section id="webr-worker" class="slide level2" data-background-color="white">
 <h2>WebR Worker</h2>
-<div class="columns">
-<div class="column">
+<p><img data-src="worker.png"></p>
 <ul>
 <li class="fragment">WebR launches a <strong>worker process</strong> in browser</li>
 <li class="fragment">Uses JavaScript to communicate between web page and worker</li>
 <li class="fragment">Everything is run in the browser</li>
 </ul>
-</div><div class="column">
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    subgraph browser [web browser]
-        direction LR
-        A[Javascript] --requests--&gt; B[WebR Worker] 
-        B --response--&gt; A 
-    end
-    style browser fill:#fff
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+</section>
+<section id="communication" class="slide level2">
+<h2>Communication</h2>
+<ul>
+<li class="fragment">Webpages use Javascript to communicate with WebR Worker</li>
+<li class="fragment">Results are returned within a <code>&lt;div&gt;</code></li>
+</ul>
 </section>
 <section id="where-to-read-about-webr" class="slide level2">
 <h2>Where to read about WebR?</h2>
@@ -1782,8 +1766,8 @@ Ted Laderas
 <h1>Getting started with Quarto/WebR</h1>
 
 </section>
-<section id="first-create-a-project" class="slide level2">
-<h2>First, Create a Project</h2>
+<section id="first-create-a-project-in-rstudio" class="slide level2">
+<h2>First, Create a Project in RStudio</h2>
 <p>File &gt;&gt; New Project &gt;&gt; New Folder &gt;&gt; Quarto Website</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="ex">├──</span> _quarto.yml</span>
 <span id="cb1-2"><a></a><span class="ex">├──</span> _site</span>
@@ -1794,55 +1778,72 @@ Ted Laderas
 </section>
 <section id="next-install-quarto-extension-in-project" class="slide level2">
 <h2>Next, install Quarto Extension in Project</h2>
+<div>
 <ul>
-<li class="fragment">In the RStudio Terminal Window:</li>
+<li>In the RStudio Terminal Window:</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">quarto</span> add coatless/quarto-webr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="next-install-quarto-extension-in-project-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Next, install Quarto Extension in Project</h2>
+<div>
+<ul>
+<li>In the RStudio Terminal Window:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="ex">quarto</span> add coatless/quarto-webr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This folder will be installed in your project:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="ex">├──</span> _extensions</span>
-<span id="cb3-2"><a></a><span class="ex">│</span>   └── coatless</span>
-<span id="cb3-3"><a></a><span class="ex">│</span>       └── webr  <span class="co">## Contains a lot of JavaScript</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a></a><span class="ex">├──</span> _extensions</span>
+<span id="cb4-2"><a></a><span class="ex">│</span>   └── coatless</span>
+<span id="cb4-3"><a></a><span class="ex">│</span>       └── webr  <span class="co">## Contains a lot of JavaScript</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section></section>
 <section>
 <section id="quartowebr-setup" class="title-slide slide level1 center">
 <h1>Quarto/WebR Setup</h1>
 
 </section>
-<section id="quartowebr-setup-1" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Quarto/WebR Setup</h2>
+<section id="quarto-frontmatter" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quarto Frontmatter</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb4-1" class="hljs-ln-code"><a></a><span class="an">title:</span><span class="co"> "My WebR Demo"</span></span>
-<span id="cb4-2" class="hljs-ln-code"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb4-3" class="hljs-ln-code"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb5-1" class="hljs-ln-code"><a></a><span class="co">---</span></span>
+<span id="cb5-2" class="hljs-ln-code"><a></a><span class="an">title:</span><span class="co"> "My WebR Demo"</span></span>
+<span id="cb5-3" class="hljs-ln-code"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb5-4" class="hljs-ln-code"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span>
+<span id="cb5-5" class="hljs-ln-code"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li class="fragment">Start like usual</li>
 <li class="fragment">Specify <code>engine: knitr</code></li>
 </ul>
 </section>
-<section id="quartowebr-setup-2" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Quarto/WebR Setup</h2>
+<section id="quarto-frontmatter-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quarto Frontmatter</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="4-5"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb5-1" class="hljs-ln-code"><a></a><span class="an">title:</span><span class="co"> "My WebR Demo"</span></span>
-<span id="cb5-2" class="hljs-ln-code"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb5-3" class="hljs-ln-code"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span>
-<span id="cb5-4" class="hljs-ln-code"><a></a><span class="an">filters:</span><span class="co">                     </span></span>
-<span id="cb5-5" class="hljs-ln-code"><a></a><span class="ss">  - </span>webr                     </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="5-6"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb6-1" class="hljs-ln-code"><a></a><span class="co">---</span></span>
+<span id="cb6-2" class="hljs-ln-code"><a></a><span class="an">title:</span><span class="co"> "My WebR Demo"</span></span>
+<span id="cb6-3" class="hljs-ln-code"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb6-4" class="hljs-ln-code"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span>
+<span id="cb6-5" class="hljs-ln-code"><a></a><span class="an">filters:</span><span class="co">                     </span></span>
+<span id="cb6-6" class="hljs-ln-code"><a></a><span class="co">  - webr                    </span></span>
+<span id="cb6-7" class="hljs-ln-code"><a></a><span class="co">---</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li class="fragment">Need to use <code>filters</code> with <code>- webr</code> option</li>
 </ul>
 </section>
-<section id="quartowebr-setup-3" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Quarto/WebR Setup</h2>
+<section id="quarto-frontmatter-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quarto Frontmatter</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="6-7"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb6-1" class="hljs-ln-code"><a></a><span class="an">title:</span><span class="co"> "My WebR Demo"</span></span>
-<span id="cb6-2" class="hljs-ln-code"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb6-3" class="hljs-ln-code"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span>
-<span id="cb6-4" class="hljs-ln-code"><a></a><span class="an">filters:</span><span class="co">                         </span></span>
-<span id="cb6-5" class="hljs-ln-code"><a></a><span class="ss">  - </span>webr                         </span>
-<span id="cb6-6" class="hljs-ln-code"><a></a>webr:                            </span>
-<span id="cb6-7" class="hljs-ln-code"><a></a>  packages: <span class="co">[</span><span class="ot">'ggplot2', 'dplyr', 'palmerpenguins'</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="7-8"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb7-1" class="hljs-ln-code"><a></a><span class="co">---</span></span>
+<span id="cb7-2" class="hljs-ln-code"><a></a><span class="an">title:</span><span class="co"> "My WebR Demo"</span></span>
+<span id="cb7-3" class="hljs-ln-code"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb7-4" class="hljs-ln-code"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span>
+<span id="cb7-5" class="hljs-ln-code"><a></a><span class="an">filters:</span><span class="co">                         </span></span>
+<span id="cb7-6" class="hljs-ln-code"><a></a><span class="co">  - webr                         </span></span>
+<span id="cb7-7" class="hljs-ln-code"><a></a><span class="an">webr:</span><span class="co">                            </span></span>
+<span id="cb7-8" class="hljs-ln-code"><a></a><span class="co">  packages: ['ggplot2', 'dplyr', 'palmerpenguins']</span></span>
+<span id="cb7-9" class="hljs-ln-code"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li class="fragment"><code>webr</code> is where you set options:
@@ -1859,16 +1860,16 @@ Ted Laderas
 <li class="fragment">Packages need to be compiled for WebAssembly
 <ul>
 <li class="fragment"><a href="https://github.com/r-wasm/rwasm"><code>{rwasm}</code> package</a></li>
-<li class="fragment">Need to solve dependencies</li>
+<li class="fragment">Need to solve dependencies (for FORTRAN, C++, code)</li>
 </ul></li>
 <li class="fragment"><a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-using-r-packages.html">Using R Packages in WebR</a>
 <ul>
-<li class="fragment">Can install in realtime or using the <code>webr::install()</code> option</li>
+<li class="fragment">Can install in setup chunk or using the <code>webr::install()</code> option</li>
 </ul></li>
 </ul>
 </section>
-<section id="not-all-dependencies" class="slide level2">
-<h2>Not all dependencies</h2>
+<section id="not-all-dependencies-are-available" class="slide level2">
+<h2>Not all dependencies are available</h2>
 <ul>
 <li class="fragment"><a href="https://repo.r-wasm.org/">WebR Compiled Packages</a>
 <ul>
@@ -1887,44 +1888,36 @@ Ted Laderas
 </section>
 <section id="quartowebr-block" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Quarto/WebR Block</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb7-1" class="hljs-ln-code"><a></a><span class="in">```{webr-r}</span></span>
-<span id="cb7-2" class="hljs-ln-code"><a></a><span class="in">library(palmerpenguins)</span></span>
-<span id="cb7-3" class="hljs-ln-code"><a></a><span class="in">table(penguins$island)</span></span>
-<span id="cb7-4" class="hljs-ln-code"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="quartowebr-block-1" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Quarto/WebR Block</h2>
 <div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb8-1" class="hljs-ln-code"><a></a><span class="in">```{webr-r}</span></span>
 <span id="cb8-2" class="hljs-ln-code"><a></a><span class="in">library(palmerpenguins)</span></span>
 <span id="cb8-3" class="hljs-ln-code"><a></a><span class="in">table(penguins$island)</span></span>
 <span id="cb8-4" class="hljs-ln-code"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="quartowebr-block-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quarto/WebR Block</h2>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb9-1" class="hljs-ln-code"><a></a><span class="in">```{webr-r}</span></span>
+<span id="cb9-2" class="hljs-ln-code"><a></a><span class="in">library(palmerpenguins)</span></span>
+<span id="cb9-3" class="hljs-ln-code"><a></a><span class="in">table(penguins$island)</span></span>
+<span id="cb9-4" class="hljs-ln-code"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This becomes:</p>
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="context-setup" class="slide level2">
-<h2><code>context: setup</code></h2>
-<p><a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-internal-cell.html#hidden-loading-of-a-dataset"><code>context: setup</code></a> - Pre-load data, load packages, for use globally</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="in">```{webr-r}</span></span>
-<span id="cb9-2"><a></a><span class="in">#| context: setup</span></span>
-<span id="cb9-3"><a></a></span>
-<span id="cb9-4"><a></a><span class="in">library(dplyr)</span></span>
-<span id="cb9-5"><a></a><span class="in">library(ggplot2)</span></span>
-<span id="cb9-6"><a></a><span class="in">library(penguins)</span></span>
-<span id="cb9-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="keep-in-mind" class="slide level2">
+<h2>Keep in Mind</h2>
+<ul>
+<li class="fragment">Every webpage is a single WebR Session</li>
+<li class="fragment">Data objects persist between code windows</li>
+<li class="fragment">Be careful with incremental lessons with multiple code windows</li>
+<li class="fragment">Design consideration: what goes together in a single webpage?</li>
+</ul>
 </section>
-<section id="context-output" class="slide level2">
-<h2><code>context: output</code></h2>
-<p>Show only output, not execution cell</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a><span class="in">```{webr-r}</span></span>
-<span id="cb10-2"><a></a><span class="in">#| context: output</span></span>
-<span id="cb10-3"><a></a></span>
-<span id="cb10-4"><a></a><span class="in">table(penguins$species)</span></span>
-<span id="cb10-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="context-output-1" class="slide level2">
-<h2><code>context: output</code></h2>
+<section id="persistence-of-penguins" class="slide level2">
+<h2>Persistence of Penguins</h2>
 <div id="qwebr-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Be careful with multi-stage problems - mistakes may propagate</p>
+<div id="qwebr-insertion-location-5"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section></section>
 <section>
@@ -1935,8 +1928,13 @@ Ted Laderas
 <section id="adding-layers" class="slide level2">
 <h2>Adding Layers</h2>
 <p>Add another layer to the below plot by appending a <code>geom_point(aes(color=species))</code> to it.</p>
-<div id="qwebr-insertion-location-5"></div>
+<div id="qwebr-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section></section>
+<section>
+<section id="webr-filesystem" class="title-slide slide level1 center">
+<h1>WebR Filesystem</h1>
+
 </section>
 <section id="what-about-files" class="slide level2">
 <h2>What about files?</h2>
@@ -1961,18 +1959,17 @@ Ted Laderas
 <li class="fragment">URL needs to be <code>https://</code></li>
 <li class="fragment"><code>download.file()</code></li>
 </ul></li>
-<li class="fragment"></li>
 </ul>
 </section>
 <section id="getting-data-in-from-a-url" class="slide level2">
 <h2>Getting data in from a URL</h2>
 <p>For teaching, put in a <code>context: setup</code> chunk:</p>
-<div id="qwebr-insertion-location-6"></div>
+<div id="qwebr-insertion-location-7"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="loading-data-in-the-filesystem" class="slide level2">
 <h2>Loading data in the filesystem</h2>
-<div id="qwebr-insertion-location-7"></div>
+<div id="qwebr-insertion-location-8"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="rwasmfile_packager" class="slide level2">
@@ -1981,23 +1978,57 @@ Ted Laderas
 <li class="fragment">Lets you package a folder into a filesystem</li>
 <li class="fragment">Still needs to be hosted somewhere</li>
 </ul>
+</section></section>
+<section>
+<section id="code-block-options" class="title-slide slide level1 center">
+<h1>Code Block Options</h1>
+
+</section>
+<section id="context-setup" class="slide level2">
+<h2><code>context: setup</code></h2>
+<p><a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-internal-cell.html#hidden-loading-of-a-dataset"><code>context: setup</code></a> - Pre-load data, load packages, for use globally</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a><span class="in">```{webr-r}</span></span>
+<span id="cb10-2"><a></a><span class="in">#| context: setup</span></span>
+<span id="cb10-3"><a></a></span>
+<span id="cb10-4"><a></a><span class="in">library(dplyr)</span></span>
+<span id="cb10-5"><a></a><span class="in">library(ggplot2)</span></span>
+<span id="cb10-6"><a></a><span class="in">library(penguins)</span></span>
+<span id="cb10-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="context-output" class="slide level2">
+<h2><code>context: output</code></h2>
+<p>Show only output, not execution cell</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a><span class="in">```{webr-r}</span></span>
+<span id="cb11-2"><a></a><span class="in">#| context: output</span></span>
+<span id="cb11-3"><a></a></span>
+<span id="cb11-4"><a></a><span class="in">table(penguins$species)</span></span>
+<span id="cb11-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="context-output-1" class="slide level2">
+<h2><code>context: output</code></h2>
+<div id="qwebr-insertion-location-9"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section></section>
+<section>
+<section id="deploy-your-html" class="title-slide slide level1 center">
+<h1>Deploy your HTML</h1>
+
 </section>
 <section id="deployment" class="slide level2">
 <h2>Deployment</h2>
 <ul>
 <li class="fragment">You will need a web server to deploy your WebR page</li>
-<li class="fragment">Do not need a Shiny server, just something that serves HTML</li>
+<li class="fragment">Serve HTML, no shiny server needed</li>
 <li class="fragment">Browser needs internet access to download packages</li>
-<li class="fragment">All computations are done in the browser</li>
 </ul>
 </section>
 <section id="deployment-1" class="slide level2">
 <h2>Deployment</h2>
 <ul>
 <li class="fragment"><p>Can use github pages:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="ex">quarto</span> publish gh-pages ./</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="ex">quarto</span> publish gh-pages ./</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li class="fragment"><p>Netlify</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="ex">quarto</span> publish netlify ./</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a></a><span class="ex">quarto</span> publish netlify ./</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
 </section></section>
 <section>
@@ -2022,9 +2053,10 @@ Ted Laderas
 <section id="keep-in-touch" class="slide level2">
 <h2>Keep in Touch</h2>
 <ul>
-<li class="fragment"><a href="https://elk.vmst.io/vmst.io/@tladeras" class="uri">https://elk.vmst.io/vmst.io/@tladeras</a></li>
-<li class="fragment">tedladeras at gmail</li>
-<li class="fragment"><a href="https://laderast.github.io" class="uri">https://laderast.github.io</a></li>
+<li class="fragment">Source code: <a href="https://github.com/laderast/webr-demo/" class="uri">https://github.com/laderast/webr-demo/</a></li>
+<li class="fragment">Mastodon: <a href="https://vmst.io/@tladeras" class="uri">https://vmst.io/@tladeras</a></li>
+<li class="fragment">Email: tedladeras at gmail</li>
+<li class="fragment">Web: <a href="https://laderast.github.io" class="uri">https://laderast.github.io</a></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
