@@ -74,7 +74,7 @@
     "href": "index.html#how-does-webr-work",
     "title": "WebR: Why, What, How",
     "section": "How does WebR work?",
-    "text": "How does WebR work?\n\nR has been compiled to WebAssembly\n\nMachine code for web browsers\n\nBrowsers include WebAssembly and JavaScript"
+    "text": "How does WebR work?\n\nR has been compiled to WebAssembly\n\nMachine code (low-level) for web browsers\n\nBrowsers can run both WebAssembly and JavaScript"
   },
   {
     "objectID": "index.html#this-is-a-huge-accomplishment",
