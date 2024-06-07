@@ -210,13 +210,6 @@
     "text": "Adding Layers\nAdd another layer to the below plot by appending a geom_point(aes(color=species)) to it.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "index.html#wrapping-up",
-    "href": "index.html#wrapping-up",
-    "title": "WebR: Why, What, How",
-    "section": "Wrapping Up",
-    "text": "Wrapping Up\nHopefully you learned to:\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)"
-  },
-  {
     "objectID": "index.html#what-about-files",
     "href": "index.html#what-about-files",
     "title": "WebR: Why, What, How",
@@ -299,6 +292,13 @@
     "title": "WebR: Why, What, How",
     "section": "Resources",
     "text": "Resources\n\nWebR Filesystem (Bob Rudis)\nTeaching with WebR - Nicola Rennie\nBob Rudis’ WebR Talk - much more about the indepth details of WebR\nQuarto/WebR extension - What I’ve been talking about\nWebR Developer Resources"
+  },
+  {
+    "objectID": "index.html#wrapping-up",
+    "href": "index.html#wrapping-up",
+    "title": "WebR: Why, What, How",
+    "section": "Wrapping Up",
+    "text": "Wrapping Up\nHopefully you learned to:\n\nArticulate what WebR is and how it lets your run in the browser\nExplain why to use WebR in your educational work\nUtilize WebR in your presentations and web pages (how)"
   },
   {
     "objectID": "index.html#keep-in-touch",
