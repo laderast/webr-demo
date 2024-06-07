@@ -273,15 +273,6 @@ ggplot(penguins) +
   geom_hex() + ---------
 ```
 
-## Wrapping Up
-
-Hopefully you learned to:
-
-- **Articulate** *what* WebR is and how it lets your run in the browser
-- **Explain** *why* to use WebR in your educational work
-- **Utilize** WebR in your presentations and web pages (*how*)
-
-
 
 # WebR Filesystem
 
@@ -392,6 +383,16 @@ table(penguins$species)
 - [Bob Rudis' WebR Talk](https://rud.is/w/2023-nyr-webr/) - much more about the indepth details of WebR
 - [Quarto/WebR extension](https://quarto-webr.thecoatlessprofessor.com/) - What I've been talking about
 - [WebR Developer Resources](https://quarto-webr.thecoatlessprofessor.com/qwebr-developer-resources.html)
+
+
+## Wrapping Up
+
+Hopefully you learned to:
+
+- **Articulate** *what* WebR is and how it lets your run in the browser
+- **Explain** *why* to use WebR in your educational work
+- **Utilize** WebR in your presentations and web pages (*how*)
+
 
 
 ## Keep in Touch
